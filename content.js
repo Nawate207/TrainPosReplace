@@ -1,5 +1,35 @@
 /// 定数定義
 const area = "近畿エリア";
+const OperationInfoPages = [
+    {
+        'area': 'JRW',
+        'code': 'hokuriku',
+        'line': '北陸エリア',
+        'sectionId': 'InfoBtn'
+    }, {
+        'area': 'JRW',
+        'code': 'kinki',
+        'line': '近畿エリア',
+        'sectionId': 'InfoBtn'
+    }, {
+        'area': 'JRW',
+        'code': 'chugoku',
+        'line': '中国エリア',
+        'sectionId': 'InfoBtn'
+    }, {
+        'area': 'JRW',
+        'code': 'ex_index',
+        'line': '特急列車',
+        'sectionId': 'InfoBtn'
+    }, {
+        'area': 'JRC',
+        'code': 'zairaisen',
+        'line': 'JRCエリア',
+        'sectionId': 'InfoBtn'
+    }
+
+]
+
 const KinkiAreaLine = [
     {
         'code': 'hokuriku',
@@ -11,8 +41,7 @@ const KinkiAreaLine = [
         'line': 'A 琵琶湖線',
         'sectionId': 'lineBtnKinki',
         'flowType': 'KinkiUrban'
-    },
-    {
+    }, {
         'code': 'kyoto',
         'line': 'A 京都線',
         'sectionId': 'lineBtnKinki',
@@ -665,7 +694,7 @@ function AddDispTypeCol(trainType, linename) {//otherはlinename=""を定義し�
             return typeCol;
         }
         case "関空紀州": {
-            typeCol = '<span class="kixrapid">関空</span>' + '<span class="kishujirapid">紀州</span>';
+            typeCol = '<span class="kixrapid">関空</span>' + '/' + '<span class="kishujirapid">紀州路</span>' + '<span class="rapid">快速</span>';
             return typeCol;
         }
         case "大和路快": {
@@ -1137,7 +1166,7 @@ function trainElementC(train) {
 // }
 
 // ボタンクリック時に発火
-async function clickEvent(linename, flowType) {
+async function lineClickEvent(linename, flowType) {
     elem.innerHTML = "<div class='nowloading'>・・・読み込み中・・・</div>";
     // リクエスト情報定義
     const requestUrl = "https://prod-38.japaneast.logic.azure.com:443/workflows/a98ba8e0a5b74390a09eecfc147607fb/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=IMP3VtK1G505nZaw6u7osA8vInr_0M3DSb5kZzsK76o"
@@ -1194,6 +1223,7 @@ async function clickEvent(linename, flowType) {
 
 /* 画面ロード時に路線ボタン出力 */
 window.addEventListener('load', () => {
+    OperationInfoPages.map(k => InfoButton(k.area, k.code, k.line, k.sectionId));
     KinkiAreaLine.map(k => lineButton(k.code, k.line, k.sectionId, k.flowType));
     OkayamaAreaLine.map(k => lineButton(k.code, k.line, k.sectionId, k.flowType));
     HiroSekiAreaLine.map(k => lineButton(k.code, k.line, k.sectionId, k.flowType));
@@ -1205,6 +1235,8 @@ window.addEventListener('load', () => {
 *
 * @param {String} code
 * @param {String} line
+* @param {String} sectionId
+* @param {String} flowType
 */
 function lineButton(code, line, sectionId, flowType) {
     const outputArea = document.getElementById(sectionId);
@@ -1213,7 +1245,33 @@ function lineButton(code, line, sectionId, flowType) {
     button.className = `button ${code}`;
     button.name = 'word';
     button.onclick = function () {
-        clickEvent(code, flowType);
+        lineClickEvent(code, flowType);
+    }
+    button.innerText = line;
+    outputArea.appendChild(button);
+}
+
+/*
+*
+* @param {String} code
+* @param {String} line
+* @param {String} sectionId
+*/
+function InfoButton(area, code, line, sectionId) {
+    const outputArea = document.getElementById(sectionId);
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = `button ${code}`;
+    button.name = 'word';
+    button.onclick = function () {
+        switch (area) {
+            case 'JRW':
+                window.open('https://trafficinfo.westjr.co.jp/' + code + '.html', '_blank');
+                break;
+            case 'JRC':
+                window.open('https://traininfo.jr-central.co.jp/' + code + '/index.html?lang=ja', '_blank');
+                break;
+        }
     }
     button.innerText = line;
     outputArea.appendChild(button);
