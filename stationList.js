@@ -329,6 +329,10 @@ var stations_urban = [
         "stationName": "ＪＲ総持寺"
     },
     {
+        "stationCode": "0467",
+        "stationName": "手柄山平和公園"
+    },
+    {
         "stationCode": "0501",
         "stationName": "坂田"
     },
