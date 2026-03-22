@@ -1166,9 +1166,8 @@ function trainElementC(train) {
 // }
 
 // ボタンクリック時に発火
-async function lineClickEvent(linename, flowType, line) {
+async function lineClickEvent(linename, flowType) {
     elem.innerHTML = "<div class='nowloading'>・・・読み込み中・・・</div>";
-    selectLine.innerHTML = "選択中の路線：" + line;
     // リクエスト情報定義
     const requestUrl = "https://prod-38.japaneast.logic.azure.com:443/workflows/a98ba8e0a5b74390a09eecfc147607fb/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=IMP3VtK1G505nZaw6u7osA8vInr_0M3DSb5kZzsK76o"
     const requestMethod = "POST"
@@ -1246,7 +1245,7 @@ function lineButton(code, line, sectionId, flowType) {
     button.className = `button ${code}`;
     button.name = 'word';
     button.onclick = function () {
-        lineClickEvent(code, flowType, line);
+        lineClickEvent(code, flowType);
     }
     button.innerText = line;
     outputArea.appendChild(button);
