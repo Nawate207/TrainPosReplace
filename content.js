@@ -274,12 +274,12 @@ const SaninAreaLine = [
 const CentralAreaLine = [
     {
         'code': 'zaisenichijoho_10001',
-        'line': 'CA 東海道本線（米原～豊橋）',
+        'line': 'CA 東海道線(豊橋～米原)',
         'sectionId': 'lineBtnCentral',
         'flowType': 'Jrc'
     }, {
         'code': 'zaisenichijoho_10011',
-        'line': 'CA 東海道本線（豊橋～熱海）',
+        'line': 'CA 東海道線(熱海～豊橋)',
         'sectionId': 'lineBtnCentral',
         'flowType': 'Jrc'
     }, {
@@ -304,12 +304,12 @@ const CentralAreaLine = [
         'flowType': 'Jrc'
     }, {
         'code': 'zaisenichijoho_10003',
-        'line': 'CF 中央本線',
+        'line': 'CF 中央線',
         'sectionId': 'lineBtnCentral',
         'flowType': 'Jrc'
     }, {
         'code': 'zaisenichijoho_10004',
-        'line': 'CG 高山本線',
+        'line': 'CG 高山線',
         'sectionId': 'lineBtnCentral',
         'flowType': 'Jrc'
     }, {
@@ -319,12 +319,12 @@ const CentralAreaLine = [
         'flowType': 'Jrc'
     }, {
         'code': 'zaisenichijoho_10006',
-        'line': 'CJ 関西本線',
+        'line': 'CJ 関西線',
         'sectionId': 'lineBtnCentral',
         'flowType': 'Jrc'
     }, {
         'code': 'zaisenichijoho_10007',
-        'line': '紀勢本線',
+        'line': '紀勢線',
         'sectionId': 'lineBtnCentral',
         'flowType': 'Jrc'
     }, {
@@ -342,7 +342,8 @@ const CentralAreaLine = [
 
 /// クラス定義
 // 列車情報クラス
-class Train {
+// JRW近畿アーバン
+class TrainWestUrban {
     constructor() {
         this.no = "";
         this.pos = "";
@@ -361,6 +362,56 @@ class Train {
     }
 }
 
+// JRW近畿その他
+class TrainWestOther {
+    constructor() {
+        this.no = "";
+        this.dest = "";
+        this.direction = 0;
+        this.displayType = "";
+        this.delayMinutes = 0;
+        this.nickname = "";
+        this.pos = "";
+        this.type = "";
+        this.notice = "";
+    }
+}
+
+// JRC
+class TrainCentral {
+    constructor() {
+        this.no = "";
+        this.dest = "";
+        this.direction = 0;
+        this.displayType = "";
+        this.delayMinutes = 0;
+        this.nickname = "";
+        this.pos = "";
+        this.ekikanKbn = 0;
+    }
+}
+class TrainCentral_202603 {
+    constructor() {
+        this.cars = "";
+        this.crowded = "";
+        this.delay_lin = 0;
+        this.delay_proof = 0;
+        this.direction = {};
+        this.doors = "";
+        this.laststation = {};
+        this.linename = {};
+        this.locationCol = 0;
+        this.locationRow = 0;
+        this.nickname = {};
+        this.nickname_no = 0;
+        this.position = 0;
+        this.tostation = {};
+        this.tostation2 = {};
+        this.trainnumber = "";
+        this.traintype = {};
+    }
+}
+
 // 列車行先情報クラス
 class Destination {
     constructor(code, line, text) {
@@ -371,7 +422,6 @@ class Destination {
 }
 
 /// 関数定義
-
 
 // 画面上に年月日時分秒を出力
 function clock() {
@@ -410,16 +460,15 @@ function headerDate() {
     //
 }
 
-
 // 列車情報への型定義
 /**
  * 取得したデータをマッピング
  * 列車情報クラス - 近畿アーバン
  * @param {*} obj 
- * @return {Train}
+ * @return {TrainWestUrban}
  */
-function buildTrain(obj) {
-    const train = new Train();
+function buildTrainWestUrban(obj) {
+    const train = new TrainWestUrban();
     train.no = obj["no"];
     train.pos = obj["pos"];
     train.direction = obj["direction"];
@@ -447,15 +496,14 @@ function buildDestination(obj) {
     return new Destination(obj["code"], obj["line"], obj["text"]);
 }
 
-
 /**
  * 取得したデータをマッピング
  * 列車情報クラス - 近畿その他
  * @param {*} obj 
- * @return {Train}
+ * @return {TrainWestOther}
  */
-function buildTrainOther(obj) {
-    const train = new TrainOther();
+function buildTrainWestOther(obj) {
+    const train = new TrainWestOther();
     train.dest = obj["dest"];
     train.direction = obj["direction"];
     train.delayMinutes = obj["delayMinutes"];
@@ -468,29 +516,14 @@ function buildTrainOther(obj) {
     return train;
 }
 
-class TrainOther {
-    constructor() {
-        this.no = "";
-        this.dest = "";
-        this.direction = 0;
-        this.displayType = "";
-        this.delayMinutes = 0;
-        this.nickname = "";
-        this.pos = "";
-        this.type = "";
-        this.notice = "";
-    }
-}
-
-
 /**
  * 取得したデータをマッピング
  * 列車情報クラス - JRC
  * @param {*} obj 
- * @return {Train}
+ * @return {TrainCentral}
  */
-function buildTrainC(obj) {
-    const train = new TrainC();
+function buildTrainCentral(obj) {
+    const train = new TrainCentral();
     train.dest = obj["yukisaki"];
     train.direction = obj["jogeKbn"];
     train.delayMinutes = obj["chienJifun"];
@@ -501,19 +534,28 @@ function buildTrainC(obj) {
     train.ekikanKbn = obj["ekiEkikanKbn"];
     return train;
 }
-
-class TrainC {
-    constructor() {
-        this.no = "";
-        this.dest = "";
-        this.direction = 0;
-        this.displayType = "";
-        this.delayMinutes = 0;
-        this.nickname = "";
-        this.pos = "";
-        this.ekikanKbn = 0;
-    }
+function buildTrainCentral_202603(obj) {
+    const train = new TrainCentral_202603();
+    train.cars = obj["cars"]; // 両数？ 2026/3/22時点 値なし
+    train.crowded = obj["crowded"]; // 不明 2026/3/22時点 値なし
+    train.delay_lin = obj["delay_lin"]; // 遅れ時分
+    train.delay_proof = obj["delay_proof"]; // 不明 2026/3/22時点 値なし
+    train.direction = obj["direction"]; // 当該路線の方面 上下区分を判定する必要あり
+    train.doors = obj["doors"]; // ドア数？ 2026/3/22時点 値なし
+    train.laststation = obj["laststation"]; // 不明 2026/3/22時点 値なし
+    train.linename = obj["linename"]; // 路線名
+    train.locationCol = obj["locationCol"]; // 上下区分 1=上り, 2=下り
+    train.locationRow = obj["locationRow"]; // 駅ナンバリング または 検索路線の画面上部駅からの駅数（位置駅No. - 起点駅No. + 1）
+    train.nickname = obj["nickname"]; // 列車名
+    train.nickname_no = obj["nickname_no"]; // 号数
+    train.position = obj["position"]; // 走行位置 0=駅停車, 1=駅間
+    train.tostation = obj["tostation"]; // 行先
+    train.tostation2 = obj["tostation2"]; // 2階建て列車用行先？ 例：浜松・武豊
+    train.trainnumber = obj["trainnumber"]; // 列車番号
+    train.traintype = obj["traintype"]; // 列車種別
+    return train;
 }
+
 
 // 列車情報装飾
 /**
@@ -932,10 +974,10 @@ function delayMinutesSet(delayMinutes) {
  * 駅情報取得
  * @param {string} pos 
  */
-function StaGet(pos) {
+function StaGet_WestUrban(pos) {
     const position = pos.split('_');
-    const pos1 = posMatch_U(position[0]);
-    const pos2 = posMatch_U(position[1]);
+    const pos1 = posMatch_WestUrban(position[0]);
+    const pos2 = posMatch_WestUrban(position[1]);
     if (pos2.length == 0) return pos1[0].stationName;
     else {
         const result = (pos1[0].stationName + "～" + pos2[0].stationName);
@@ -947,7 +989,7 @@ function StaGet(pos) {
  * 
  * @param {*} pos 
  */
-function posMatch_U(pos_u) {
+function posMatch_WestUrban(pos_u) {
     return stations_urban.filter(Ustation => {
         if (Ustation.stationCode === pos_u) return Ustation;
 
@@ -958,10 +1000,10 @@ function posMatch_U(pos_u) {
  * 駅情報取得
  * @param {string} pos 
  */
-function StaGet_O(pos) {
+function StaGet_WestOther(pos) {
     const position = pos.split('_');
-    const pos1 = posMatch_O(position[0]);
-    const pos2 = posMatch_O(position[1]);
+    const pos1 = posMatch_WestOther(position[0]);
+    const pos2 = posMatch_WestOther(position[1]);
     if (pos2.length == 0) return pos1[0].StationName;
     else {
         const result = (pos1[0].StationName + "～" + pos2[0].StationName);
@@ -973,7 +1015,7 @@ function StaGet_O(pos) {
  * 
  * @param {*} pos 
  */
-function posMatch_O(pos_o) {
+function posMatch_WestOther(pos_o) {
     return stations_other.filter(Ostation => {
         if (Ostation.StationCode === pos_o) return Ostation;
 
@@ -982,28 +1024,38 @@ function posMatch_O(pos_o) {
 
 /**
 * 駅情報取得 - JRC
-* @param {*} pos 
-* @param {*} ekikanKbn 
+* @param {*} linename 
+* @param {num} locationRow 
+* @param {*} position 
 */
-function StaGet_Central(pos, ekikanKbn) {
-    if (ekikanKbn == 1) {
-        const position = posMatch_C(pos);
-        return position[0].name;
+function StaGet_Central(linename, locationRow, position) {
+    if (position == 0) {
+        const location = posMatch_Central(linename, locationRow);
+        return location[0].ekiMei;
     }
-    else if (ekikanKbn == 2) {
-        const position = posMatch_C(pos);
-        return position[0].name + " 付近 ";
+    else if (position == 1) {
+        const location = posMatch_Central(linename, locationRow);
+        return location[0].ekiMei + " 付近 ";
     }
 }
 
 /**
  * 
- * @param {string} pos_C
+ * @param {*} linename
+ * @param {num} locationRow
  */
-function posMatch_C(pos_C) {
-    return stations_Central.filter(Cstation => {
-        if (Cstation.code === pos_C) {
-            return Cstation.name;
+function posMatch_Central(linename, locationRow) {
+    // var regex = new RegExp('[\(]');
+    // var line = '';
+    var row = locationRow * 10;
+    // if(regex.test(linename)){
+    //     line = linename.split("(")[0];
+    // }else{
+    //     line = linename;
+    // }
+    return stations_Central_202603.filter(Cstation => {
+        if (Cstation.ryokakuSenkuMei === linename && Cstation.kudariJun === row.toString()) {
+            return Cstation.ekiMei;
         }
     });
 }
@@ -1013,14 +1065,14 @@ function posMatch_C(pos_C) {
  * 
  * @param {Train[]} trains 
  */
-function viewTrains(trains, flowType) {
+function viewTrainsWest(trains, flowType) {
     const elem = document.getElementById("elem");
     let trainElems;
     while (child = elem.firstChild) elem.removeChild(child);
     switch (flowType) {
-        case 'KinkiUrban': trainElems = trains.map(trainElement);
+        case 'KinkiUrban': trainElems = trains.map(trainElementWestUrban);
             break;
-        case 'JrwOther': trainElems = trains.map(trainElementOther);
+        case 'JrwOther': trainElems = trains.map(trainElementWestOther);
             break;
     }
     trainElems.forEach(element => {
@@ -1032,10 +1084,18 @@ function viewTrains(trains, flowType) {
  * 出力する列車情報を成形 - JRC
  * @param {Train[]} trains 
  */
-function viewTrainsC(trains, flowType) {
+function viewTrainsCentral(trains, flowType) {
     // const elem = document.getElementById("elem");
     while (child = elem.firstChild) elem.removeChild(child);
-    const trainElems = trains.map(trainElementC);
+    const trainElems = trains.map(trainElementCentral);
+    trainElems.forEach(element => {
+        elem.appendChild(element);
+    });
+}
+function viewTrainsCentral_202603(trains, flowType) {
+    // const elem = document.getElementById("elem");
+    while (child = elem.firstChild) elem.removeChild(child);
+    const trainElems = trains.map(trainElementCentral_202603);
     trainElems.forEach(element => {
         elem.appendChild(element);
     });
@@ -1046,14 +1106,14 @@ function viewTrainsC(trains, flowType) {
  * @param {Train} train
  * @return {HTMLElement}
  */
-function trainElement(train) {
+function trainElementWestUrban(train) {
     const line = "";
     const DispTypeAddCol = AddDispTypeCol(train.displayType, train.dest.line);
     const DestAddCol = AddDestCol(train.dest.text);
     const LineMark = LineMarkGet(train.dest.line);
     const direction = directionSet(train.direction, line);
     const delayMinutes = delayMinutesSet(train.delayMinutes);
-    const position = StaGet(train.pos);
+    const position = StaGet_WestUrban(train.pos);
     // const position = stationGet(train.pos);
     const aSeatInfo = train.aSeatInfo === "" ? "" : " " + train.aSeatInfo + " ";
     // const text = `${train.no} ${train.displayType}${train.nickname} ${train.typeChange} ${train.via} ${train.dest.text}行き ${train.numberOfCars}両 ${delayMinutes} 走行位置：${position}${direction}`;
@@ -1072,14 +1132,14 @@ function trainElement(train) {
  * @param {Train} train 
  * @return {HTMLElement}
  */
-function trainElementOther(train) {
+function trainElementWestOther(train) {
     const line = "";
     const DispTypeAddCol = AddDispTypeCol(train.displayType, line);
     const DestAddCol = AddDestCol(train.dest);
     const nickname = nicknameSet(train.nickname);
     const direction = directionSet(train.direction, line);
     const delayMinutes = delayMinutesSet(train.delayMinutes);
-    const position = StaGet_O(train.pos);
+    const position = StaGet_WestOther(train.pos);
     // const position = stationGet(train.pos);
     const notice = train.notice === null ? "" : " " + train.notice + " ";
     // const text = `${train.no} ${train.displayType}${nickname} ${train.dest}行き ${delayMinutes} 走行位置：${position}${direction}`;
@@ -1097,7 +1157,7 @@ function trainElementOther(train) {
  * @param {Train} train 
  * @return {HTMLElement}
  */
-function trainElementC(train) {
+function trainElementCentral(train) {
     const line = 'central';
     const DispTypeAddCol = AddDispTypeCol(train.displayType, line);
     const DestAddCol = AddDestCol(train.dest);
@@ -1107,6 +1167,22 @@ function trainElementC(train) {
     const position = StaGet_Central(train.pos, train.ekikanKbn);
     // const text = `${train.no} ${train.displayType}${nickname} ${train.dest}行き ${delayMinutes} 走行位置：${position}${direction}`;
     const text = train.no + " " + DispTypeAddCol + " " + nickname + " " + DestAddCol + delayMinutes + " 走行位置：" + position + direction;
+    const elem = document.createElement('div');
+    elem.className = 'kakomi-box3';
+    // elem.innerText = text;
+    elem.innerHTML = text;
+    return elem;
+}
+function trainElementCentral_202603(train) {
+    const line = 'central';
+    const DispTypeAddCol = AddDispTypeCol(train.traintype[0].name, line);
+    const DestAddCol = AddDestCol(train.tostation[0].name);
+    const nickname = nicknameSet(train.nickname[0].name);
+    const direction = directionSet(train.locationCol, line);
+    const delayMinutes = delayMinutesSet(train.delay_lin);
+    const position = StaGet_Central(train.linename[0].name, train.locationRow, train.position);
+    // const text = `${train.no} ${train.displayType}${nickname} ${train.dest}行き ${delayMinutes} 走行位置：${position}${direction}`;
+    const text = train.trainnumber + " " + DispTypeAddCol + " " + nickname + " " + DestAddCol + " " + delayMinutes + " 走行位置：" + position + direction;
     const elem = document.createElement('div');
     elem.className = 'kakomi-box3';
     // elem.innerText = text;
@@ -1154,10 +1230,10 @@ function trainElementC(train) {
 //         switch (flowType) {
 //             case 'KinkiUrban': trains = body.map(buildTrain);
 //                 break;
-//             case 'JrwOther': trains = body.map(buildTrainOther);
+//             case 'JrwOther': trains = body.map(buildTrainWestOther);
 //                 break;
 //         }
-//         viewTrains(trains, flowType);
+//         viewTrainsWest(trains, flowType);
 
 //         エラー発生時にキャッチしてメッセージを返す
 //     } catch (error) {
@@ -1167,7 +1243,7 @@ function trainElementC(train) {
 
 // ボタンクリック時に発火
 async function lineClickEvent(linename, flowType, line) {
-    elem.innerHTML = "<div class='nowloading'>・・・読み込み中・・・</div>";
+    elem.innerHTML = "・・・読み込み中・・・";
     selectLine.innerHTML = "選択中の路線：[" + line + "]";
     // リクエスト情報定義
     const requestUrl = "https://prod-38.japaneast.logic.azure.com:443/workflows/a98ba8e0a5b74390a09eecfc147607fb/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=IMP3VtK1G505nZaw6u7osA8vInr_0M3DSb5kZzsK76o"
@@ -1205,14 +1281,24 @@ async function lineClickEvent(linename, flowType, line) {
         let trains;
 
         switch (flowType) {
-            case 'KinkiUrban': trains = body.map(buildTrain);
-                viewTrains(trains, flowType);
+            case 'KinkiUrban': trains = body.map(buildTrainWestUrban);
+                viewTrainsWest(trains, flowType);
                 break;
-            case 'JrwOther': trains = body.map(buildTrainOther);
-                viewTrains(trains, flowType);
+            case 'JrwOther': trains = body.map(buildTrainWestOther);
+                viewTrainsWest(trains, flowType);
                 break;
-            case 'Jrc': trains = body.lst.map(buildTrainC);
-                viewTrainsC(trains, flowType);
+            case 'Jrc': trains = body.map(buildTrainCentral_202603);
+                var regex = new RegExp('[ ]');
+                var displine = '';
+                if (regex.test(line)) {
+                    displine = line.split(' ')[1];
+                } else {
+                    displine = line;
+                }
+                const trainsFilter = trains.filter(train =>
+                    train.linename[0].name === displine
+                );
+                viewTrainsCentral_202603(trainsFilter, flowType);
                 break;
         }
 

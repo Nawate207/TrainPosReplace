@@ -6421,3 +6421,3881 @@ var stations_Central = [
         "name": "猪谷"
     }
 ]
+var stations_Central_202603 = [
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "10",
+        "ekiMei": "豊橋"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "20",
+        "ekiMei": "西小坂井"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "30",
+        "ekiMei": "愛知御津"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "40",
+        "ekiMei": "三河大塚"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "50",
+        "ekiMei": "三河三谷"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "60",
+        "ekiMei": "蒲郡"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "70",
+        "ekiMei": "三河塩津"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "80",
+        "ekiMei": "三ケ根"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "90",
+        "ekiMei": "幸田"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "100",
+        "ekiMei": "相見"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "110",
+        "ekiMei": "岡崎"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "120",
+        "ekiMei": "西岡崎"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "130",
+        "ekiMei": "安城"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "140",
+        "ekiMei": "三河安城"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "150",
+        "ekiMei": "東刈谷"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "160",
+        "ekiMei": "野田新町"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "170",
+        "ekiMei": "刈谷"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "180",
+        "ekiMei": "逢妻"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "190",
+        "ekiMei": "大府"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "200",
+        "ekiMei": "共和"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "210",
+        "ekiMei": "南大高"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "220",
+        "ekiMei": "大高"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "230",
+        "ekiMei": "笠寺"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "240",
+        "ekiMei": "熱田"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "250",
+        "ekiMei": "金山"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "260",
+        "ekiMei": "尾頭橋"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "270",
+        "ekiMei": "名古屋"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "280",
+        "ekiMei": "枇杷島"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "290",
+        "ekiMei": "清洲"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "300",
+        "ekiMei": "稲沢"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "310",
+        "ekiMei": "尾張一宮"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "320",
+        "ekiMei": "木曽川"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "330",
+        "ekiMei": "岐阜"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "340",
+        "ekiMei": "西岐阜"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "350",
+        "ekiMei": "穂積"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "360",
+        "ekiMei": "大垣"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "370",
+        "ekiMei": "垂井"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "380",
+        "ekiMei": "関ケ原"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "390",
+        "ekiMei": "柏原"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "400",
+        "ekiMei": "近江長岡"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "410",
+        "ekiMei": "醒ケ井"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(豊橋～米原)",
+        "kudariJun": "420",
+        "ekiMei": "米原"
+    },
+    {
+        "ryokakuSenkuMei": "武豊線",
+        "kudariJun": "10",
+        "ekiMei": "大府"
+    },
+    {
+        "ryokakuSenkuMei": "武豊線",
+        "kudariJun": "20",
+        "ekiMei": "尾張森岡"
+    },
+    {
+        "ryokakuSenkuMei": "武豊線",
+        "kudariJun": "30",
+        "ekiMei": "緒川"
+    },
+    {
+        "ryokakuSenkuMei": "武豊線",
+        "kudariJun": "40",
+        "ekiMei": "石浜"
+    },
+    {
+        "ryokakuSenkuMei": "武豊線",
+        "kudariJun": "50",
+        "ekiMei": "東浦"
+    },
+    {
+        "ryokakuSenkuMei": "武豊線",
+        "kudariJun": "60",
+        "ekiMei": "亀崎"
+    },
+    {
+        "ryokakuSenkuMei": "武豊線",
+        "kudariJun": "70",
+        "ekiMei": "乙川"
+    },
+    {
+        "ryokakuSenkuMei": "武豊線",
+        "kudariJun": "80",
+        "ekiMei": "半田"
+    },
+    {
+        "ryokakuSenkuMei": "武豊線",
+        "kudariJun": "90",
+        "ekiMei": "東成岩"
+    },
+    {
+        "ryokakuSenkuMei": "武豊線",
+        "kudariJun": "100",
+        "ekiMei": "武豊"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "10",
+        "ekiMei": "名古屋"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "20",
+        "ekiMei": "金山"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "30",
+        "ekiMei": "鶴舞"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "40",
+        "ekiMei": "千種"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "50",
+        "ekiMei": "大曽根"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "60",
+        "ekiMei": "新守山"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "70",
+        "ekiMei": "勝川"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "80",
+        "ekiMei": "春日井"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "90",
+        "ekiMei": "神領"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "100",
+        "ekiMei": "高蔵寺"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "110",
+        "ekiMei": "定光寺"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "120",
+        "ekiMei": "古虎渓"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "130",
+        "ekiMei": "多治見"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "140",
+        "ekiMei": "土岐市"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "150",
+        "ekiMei": "瑞浪"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "160",
+        "ekiMei": "釜戸"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "170",
+        "ekiMei": "武並"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "180",
+        "ekiMei": "恵那"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "190",
+        "ekiMei": "美乃坂本"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "200",
+        "ekiMei": "中津川"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "210",
+        "ekiMei": "落合川"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "220",
+        "ekiMei": "坂下"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "230",
+        "ekiMei": "田立"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "240",
+        "ekiMei": "南木曽"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "250",
+        "ekiMei": "十二兼"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "260",
+        "ekiMei": "野尻"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "270",
+        "ekiMei": "大桑"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "280",
+        "ekiMei": "須原"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "290",
+        "ekiMei": "倉本"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "300",
+        "ekiMei": "上松"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "310",
+        "ekiMei": "木曽福島"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "320",
+        "ekiMei": "原野"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "330",
+        "ekiMei": "宮ノ越"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "340",
+        "ekiMei": "藪原"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "350",
+        "ekiMei": "奈良井"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "360",
+        "ekiMei": "木曽平沢"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "370",
+        "ekiMei": "贄川"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "380",
+        "ekiMei": "日出塩"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "390",
+        "ekiMei": "洗馬"
+    },
+    {
+        "ryokakuSenkuMei": "中央線",
+        "kudariJun": "400",
+        "ekiMei": "塩尻"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "10",
+        "ekiMei": "岐阜"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "20",
+        "ekiMei": "長森"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "30",
+        "ekiMei": "那加"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "40",
+        "ekiMei": "蘇原"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "50",
+        "ekiMei": "各務ケ原"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "60",
+        "ekiMei": "鵜沼"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "70",
+        "ekiMei": "坂祝"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "80",
+        "ekiMei": "美濃太田"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "90",
+        "ekiMei": "古井"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "100",
+        "ekiMei": "中川辺"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "110",
+        "ekiMei": "下麻生"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "120",
+        "ekiMei": "上麻生"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "130",
+        "ekiMei": "白川口"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "140",
+        "ekiMei": "下油井"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "150",
+        "ekiMei": "飛騨金山"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "160",
+        "ekiMei": "焼石"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "170",
+        "ekiMei": "下呂"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "180",
+        "ekiMei": "禅昌寺"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "190",
+        "ekiMei": "飛騨萩原"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "200",
+        "ekiMei": "上呂"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "210",
+        "ekiMei": "飛騨宮田"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "220",
+        "ekiMei": "飛騨小坂"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "230",
+        "ekiMei": "渚"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "240",
+        "ekiMei": "久々野"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "250",
+        "ekiMei": "飛騨一ノ宮"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "260",
+        "ekiMei": "高山"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "270",
+        "ekiMei": "上枝"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "280",
+        "ekiMei": "飛騨国府"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "290",
+        "ekiMei": "飛騨古川"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "300",
+        "ekiMei": "杉崎"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "310",
+        "ekiMei": "飛騨細江"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "320",
+        "ekiMei": "角川"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "330",
+        "ekiMei": "坂上"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "340",
+        "ekiMei": "打保"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "350",
+        "ekiMei": "杉原"
+    },
+    {
+        "ryokakuSenkuMei": "高山線",
+        "kudariJun": "360",
+        "ekiMei": "猪谷"
+    },
+    {
+        "ryokakuSenkuMei": "太多線",
+        "kudariJun": "10",
+        "ekiMei": "多治見"
+    },
+    {
+        "ryokakuSenkuMei": "太多線",
+        "kudariJun": "20",
+        "ekiMei": "小泉"
+    },
+    {
+        "ryokakuSenkuMei": "太多線",
+        "kudariJun": "30",
+        "ekiMei": "根本"
+    },
+    {
+        "ryokakuSenkuMei": "太多線",
+        "kudariJun": "40",
+        "ekiMei": "姫"
+    },
+    {
+        "ryokakuSenkuMei": "太多線",
+        "kudariJun": "50",
+        "ekiMei": "下切"
+    },
+    {
+        "ryokakuSenkuMei": "太多線",
+        "kudariJun": "60",
+        "ekiMei": "可児"
+    },
+    {
+        "ryokakuSenkuMei": "太多線",
+        "kudariJun": "70",
+        "ekiMei": "美濃川合"
+    },
+    {
+        "ryokakuSenkuMei": "太多線",
+        "kudariJun": "80",
+        "ekiMei": "美濃太田"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "10",
+        "ekiMei": "名古屋"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "20",
+        "ekiMei": "八田"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "30",
+        "ekiMei": "春田"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "40",
+        "ekiMei": "蟹江"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "50",
+        "ekiMei": "永和"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "60",
+        "ekiMei": "弥富"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "70",
+        "ekiMei": "長島"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "80",
+        "ekiMei": "桑名"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "90",
+        "ekiMei": "朝日"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "100",
+        "ekiMei": "富田"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "110",
+        "ekiMei": "富田浜"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "120",
+        "ekiMei": "四日市"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "130",
+        "ekiMei": "南四日市"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "140",
+        "ekiMei": "河原田"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "150",
+        "ekiMei": "河曲"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "160",
+        "ekiMei": "加佐登"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "170",
+        "ekiMei": "井田川"
+    },
+    {
+        "ryokakuSenkuMei": "関西線",
+        "kudariJun": "180",
+        "ekiMei": "亀山"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "10",
+        "ekiMei": "亀山"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "20",
+        "ekiMei": "下庄"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "30",
+        "ekiMei": "一身田"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "40",
+        "ekiMei": "津"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "50",
+        "ekiMei": "阿漕"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "60",
+        "ekiMei": "高茶屋"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "70",
+        "ekiMei": "六軒"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "80",
+        "ekiMei": "松阪"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "90",
+        "ekiMei": "徳和"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "100",
+        "ekiMei": "多気"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "110",
+        "ekiMei": "相可"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "120",
+        "ekiMei": "佐奈"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "130",
+        "ekiMei": "栃原"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "140",
+        "ekiMei": "川添"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "150",
+        "ekiMei": "三瀬谷"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "160",
+        "ekiMei": "滝原"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "170",
+        "ekiMei": "阿曽"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "180",
+        "ekiMei": "伊勢柏崎"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "190",
+        "ekiMei": "大内山"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "200",
+        "ekiMei": "梅ケ谷"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "210",
+        "ekiMei": "紀伊長島"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "220",
+        "ekiMei": "三野瀬"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "230",
+        "ekiMei": "船津"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "240",
+        "ekiMei": "相賀"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "250",
+        "ekiMei": "尾鷲"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "260",
+        "ekiMei": "大曽根浦"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "270",
+        "ekiMei": "九鬼"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "280",
+        "ekiMei": "三木里"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "290",
+        "ekiMei": "賀田"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "300",
+        "ekiMei": "二木島"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "310",
+        "ekiMei": "新鹿"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "320",
+        "ekiMei": "波田須"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "330",
+        "ekiMei": "大泊"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "340",
+        "ekiMei": "熊野市"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "350",
+        "ekiMei": "有井"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "360",
+        "ekiMei": "神志山"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "370",
+        "ekiMei": "紀伊市木"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "380",
+        "ekiMei": "阿田和"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "390",
+        "ekiMei": "紀伊井田"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "400",
+        "ekiMei": "鵜殿"
+    },
+    {
+        "ryokakuSenkuMei": "紀勢線",
+        "kudariJun": "410",
+        "ekiMei": "新宮"
+    },
+    {
+        "ryokakuSenkuMei": "参宮線",
+        "kudariJun": "10",
+        "ekiMei": "多気"
+    },
+    {
+        "ryokakuSenkuMei": "参宮線",
+        "kudariJun": "20",
+        "ekiMei": "外城田"
+    },
+    {
+        "ryokakuSenkuMei": "参宮線",
+        "kudariJun": "30",
+        "ekiMei": "田丸"
+    },
+    {
+        "ryokakuSenkuMei": "参宮線",
+        "kudariJun": "40",
+        "ekiMei": "宮川"
+    },
+    {
+        "ryokakuSenkuMei": "参宮線",
+        "kudariJun": "50",
+        "ekiMei": "山田上口"
+    },
+    {
+        "ryokakuSenkuMei": "参宮線",
+        "kudariJun": "60",
+        "ekiMei": "伊勢市"
+    },
+    {
+        "ryokakuSenkuMei": "参宮線",
+        "kudariJun": "70",
+        "ekiMei": "五十鈴ケ丘"
+    },
+    {
+        "ryokakuSenkuMei": "参宮線",
+        "kudariJun": "80",
+        "ekiMei": "二見浦"
+    },
+    {
+        "ryokakuSenkuMei": "参宮線",
+        "kudariJun": "90",
+        "ekiMei": "松下"
+    },
+    {
+        "ryokakuSenkuMei": "参宮線",
+        "kudariJun": "110",
+        "ekiMei": "鳥羽"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "10",
+        "ekiMei": "松阪"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "20",
+        "ekiMei": "上ノ庄"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "30",
+        "ekiMei": "権現前"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "40",
+        "ekiMei": "伊勢八太"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "50",
+        "ekiMei": "一志"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "60",
+        "ekiMei": "井関"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "70",
+        "ekiMei": "伊勢大井"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "80",
+        "ekiMei": "伊勢川口"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "90",
+        "ekiMei": "関ノ宮"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "100",
+        "ekiMei": "家城"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "110",
+        "ekiMei": "伊勢竹原"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "120",
+        "ekiMei": "伊勢鎌倉"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "130",
+        "ekiMei": "伊勢八知"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "140",
+        "ekiMei": "比津"
+    },
+    {
+        "ryokakuSenkuMei": "名松線",
+        "kudariJun": "150",
+        "ekiMei": "伊勢奥津"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "10",
+        "ekiMei": "豊橋"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "20",
+        "ekiMei": "船町"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "30",
+        "ekiMei": "下地"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "40",
+        "ekiMei": "小坂井"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "50",
+        "ekiMei": "牛久保"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "60",
+        "ekiMei": "豊川"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "70",
+        "ekiMei": "三河一宮"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "80",
+        "ekiMei": "長山"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "90",
+        "ekiMei": "江島"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "100",
+        "ekiMei": "東上"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "110",
+        "ekiMei": "野田城"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "120",
+        "ekiMei": "新城"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "130",
+        "ekiMei": "東新町"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "140",
+        "ekiMei": "茶臼山"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "150",
+        "ekiMei": "三河東郷"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "160",
+        "ekiMei": "大海"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "170",
+        "ekiMei": "鳥居"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "180",
+        "ekiMei": "長篠城"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "190",
+        "ekiMei": "本長篠"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "200",
+        "ekiMei": "三河大野"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "210",
+        "ekiMei": "湯谷温泉"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "220",
+        "ekiMei": "三河槙原"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "230",
+        "ekiMei": "柿平"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "240",
+        "ekiMei": "三河川合"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "250",
+        "ekiMei": "池場"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "260",
+        "ekiMei": "東栄"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "270",
+        "ekiMei": "出馬"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "280",
+        "ekiMei": "上市場"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "290",
+        "ekiMei": "浦川"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "300",
+        "ekiMei": "早瀬"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "310",
+        "ekiMei": "下川合"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "320",
+        "ekiMei": "中部天竜"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "330",
+        "ekiMei": "佐久間"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "340",
+        "ekiMei": "相月"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "350",
+        "ekiMei": "城西"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "360",
+        "ekiMei": "向市場"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "370",
+        "ekiMei": "水窪"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "380",
+        "ekiMei": "大嵐"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "390",
+        "ekiMei": "小和田"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "400",
+        "ekiMei": "中井侍"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "410",
+        "ekiMei": "伊那小沢"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "420",
+        "ekiMei": "鶯巣"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "430",
+        "ekiMei": "平岡"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "440",
+        "ekiMei": "為栗"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "450",
+        "ekiMei": "温田"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "460",
+        "ekiMei": "田本"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "470",
+        "ekiMei": "門島"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "480",
+        "ekiMei": "唐笠"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "490",
+        "ekiMei": "金野"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "500",
+        "ekiMei": "千代"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "510",
+        "ekiMei": "天竜峡"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "520",
+        "ekiMei": "川路"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "530",
+        "ekiMei": "時又"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "540",
+        "ekiMei": "駄科"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "550",
+        "ekiMei": "毛賀"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "560",
+        "ekiMei": "伊那八幡"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "570",
+        "ekiMei": "下山村"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "580",
+        "ekiMei": "鼎"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "590",
+        "ekiMei": "切石"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "600",
+        "ekiMei": "飯田"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "610",
+        "ekiMei": "桜町"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "620",
+        "ekiMei": "伊那上郷"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "630",
+        "ekiMei": "元善光寺"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "640",
+        "ekiMei": "下市田"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "650",
+        "ekiMei": "市田"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "660",
+        "ekiMei": "下平"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "670",
+        "ekiMei": "山吹"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "680",
+        "ekiMei": "伊那大島"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "690",
+        "ekiMei": "上片桐"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "700",
+        "ekiMei": "伊那田島"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "710",
+        "ekiMei": "高遠原"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "720",
+        "ekiMei": "七久保"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "730",
+        "ekiMei": "伊那本郷"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "740",
+        "ekiMei": "飯島"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "750",
+        "ekiMei": "田切"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "760",
+        "ekiMei": "伊那福岡"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "770",
+        "ekiMei": "小町屋"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "780",
+        "ekiMei": "駒ケ根"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "790",
+        "ekiMei": "大田切"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "800",
+        "ekiMei": "宮田"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "810",
+        "ekiMei": "赤木"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "820",
+        "ekiMei": "沢渡"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "830",
+        "ekiMei": "下島"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "840",
+        "ekiMei": "伊那市"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "850",
+        "ekiMei": "伊那北"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "860",
+        "ekiMei": "田畑"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "870",
+        "ekiMei": "北殿"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "880",
+        "ekiMei": "木ノ下"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "890",
+        "ekiMei": "伊那松島"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "900",
+        "ekiMei": "沢"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "910",
+        "ekiMei": "羽場"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "920",
+        "ekiMei": "伊那新町"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "930",
+        "ekiMei": "宮木"
+    },
+    {
+        "ryokakuSenkuMei": "飯田線",
+        "kudariJun": "940",
+        "ekiMei": "辰野"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "10",
+        "ekiMei": "熱海"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "20",
+        "ekiMei": "函南"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "30",
+        "ekiMei": "三島"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "40",
+        "ekiMei": "沼津"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "50",
+        "ekiMei": "片浜"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "60",
+        "ekiMei": "原"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "70",
+        "ekiMei": "東田子の浦"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "80",
+        "ekiMei": "吉原"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "90",
+        "ekiMei": "富士"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "100",
+        "ekiMei": "富士川"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "110",
+        "ekiMei": "新蒲原"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "120",
+        "ekiMei": "蒲原"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "130",
+        "ekiMei": "由比"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "140",
+        "ekiMei": "興津"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "150",
+        "ekiMei": "清水"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "160",
+        "ekiMei": "草薙"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "170",
+        "ekiMei": "東静岡"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "180",
+        "ekiMei": "静岡"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "190",
+        "ekiMei": "安倍川"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "200",
+        "ekiMei": "用宗"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "210",
+        "ekiMei": "焼津"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "220",
+        "ekiMei": "西焼津"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "230",
+        "ekiMei": "藤枝"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "240",
+        "ekiMei": "六合"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "250",
+        "ekiMei": "島田"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "260",
+        "ekiMei": "金谷"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "270",
+        "ekiMei": "菊川"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "280",
+        "ekiMei": "掛川"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "290",
+        "ekiMei": "愛野"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "300",
+        "ekiMei": "袋井"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "310",
+        "ekiMei": "御厨"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "320",
+        "ekiMei": "磐田"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "330",
+        "ekiMei": "豊田町"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "340",
+        "ekiMei": "天竜川"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "350",
+        "ekiMei": "浜松"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "360",
+        "ekiMei": "高塚"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "370",
+        "ekiMei": "舞阪"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "380",
+        "ekiMei": "弁天島"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "390",
+        "ekiMei": "新居町"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "400",
+        "ekiMei": "鷲津"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "410",
+        "ekiMei": "新所原"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "420",
+        "ekiMei": "二川"
+    },
+    {
+        "ryokakuSenkuMei": "東海道線(熱海～豊橋)",
+        "kudariJun": "430",
+        "ekiMei": "豊橋"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "10",
+        "ekiMei": "富士"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "20",
+        "ekiMei": "柚木"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "30",
+        "ekiMei": "竪堀"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "40",
+        "ekiMei": "入山瀬"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "50",
+        "ekiMei": "富士根"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "60",
+        "ekiMei": "源道寺"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "70",
+        "ekiMei": "富士宮"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "80",
+        "ekiMei": "西富士宮"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "90",
+        "ekiMei": "沼久保"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "100",
+        "ekiMei": "芝川"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "110",
+        "ekiMei": "稲子"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "120",
+        "ekiMei": "十島"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "130",
+        "ekiMei": "井出"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "140",
+        "ekiMei": "寄畑"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "150",
+        "ekiMei": "内船"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "160",
+        "ekiMei": "甲斐大島"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "170",
+        "ekiMei": "身延"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "180",
+        "ekiMei": "塩之沢"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "190",
+        "ekiMei": "波高島"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "200",
+        "ekiMei": "下部温泉"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "210",
+        "ekiMei": "甲斐常葉"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "220",
+        "ekiMei": "市ノ瀬"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "230",
+        "ekiMei": "久那土"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "240",
+        "ekiMei": "甲斐岩間"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "250",
+        "ekiMei": "落居"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "260",
+        "ekiMei": "鰍沢口"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "270",
+        "ekiMei": "市川大門"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "280",
+        "ekiMei": "市川本町"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "290",
+        "ekiMei": "芦川"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "300",
+        "ekiMei": "甲斐上野"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "310",
+        "ekiMei": "東花輪"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "320",
+        "ekiMei": "小井川"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "330",
+        "ekiMei": "常永"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "340",
+        "ekiMei": "国母"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "350",
+        "ekiMei": "甲斐住吉"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "360",
+        "ekiMei": "南甲府"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "370",
+        "ekiMei": "善光寺"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "380",
+        "ekiMei": "金手"
+    },
+    {
+        "ryokakuSenkuMei": "身延線",
+        "kudariJun": "390",
+        "ekiMei": "甲府"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "10",
+        "ekiMei": "国府津"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "20",
+        "ekiMei": "下曽我"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "30",
+        "ekiMei": "上大井"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "40",
+        "ekiMei": "相模金子"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "50",
+        "ekiMei": "松田"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "60",
+        "ekiMei": "東山北"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "70",
+        "ekiMei": "山北"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "80",
+        "ekiMei": "谷峨"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "90",
+        "ekiMei": "駿河小山"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "100",
+        "ekiMei": "足柄"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "110",
+        "ekiMei": "御殿場"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "120",
+        "ekiMei": "南御殿場"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "130",
+        "ekiMei": "富士岡"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "140",
+        "ekiMei": "岩波"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "150",
+        "ekiMei": "裾野"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "160",
+        "ekiMei": "長泉なめり"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "170",
+        "ekiMei": "下土狩"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "180",
+        "ekiMei": "大岡"
+    },
+    {
+        "ryokakuSenkuMei": "御殿場線",
+        "kudariJun": "190",
+        "ekiMei": "沼津"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "10",
+        "ekiMei": "名古屋"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "20",
+        "ekiMei": "枇杷島"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "30",
+        "ekiMei": "清洲"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "40",
+        "ekiMei": "稲沢"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "50",
+        "ekiMei": "尾張一宮"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "60",
+        "ekiMei": "木曽川"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "70",
+        "ekiMei": "岐阜"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "80",
+        "ekiMei": "長森"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "90",
+        "ekiMei": "那加"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "100",
+        "ekiMei": "蘇原"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "110",
+        "ekiMei": "各務ケ原"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "120",
+        "ekiMei": "鵜沼"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "130",
+        "ekiMei": "坂祝"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "140",
+        "ekiMei": "美濃太田"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "150",
+        "ekiMei": "古井"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "160",
+        "ekiMei": "中川辺"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "170",
+        "ekiMei": "下麻生"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "180",
+        "ekiMei": "上麻生"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "190",
+        "ekiMei": "白川口"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "200",
+        "ekiMei": "下油井"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "210",
+        "ekiMei": "飛騨金山"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "220",
+        "ekiMei": "焼石"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "230",
+        "ekiMei": "下呂"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "240",
+        "ekiMei": "禅昌寺"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "250",
+        "ekiMei": "飛騨萩原"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "260",
+        "ekiMei": "上呂"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "270",
+        "ekiMei": "飛騨宮田"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "280",
+        "ekiMei": "飛騨小坂"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "290",
+        "ekiMei": "渚"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "300",
+        "ekiMei": "久々野"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "310",
+        "ekiMei": "飛騨一ノ宮"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "320",
+        "ekiMei": "高山"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "330",
+        "ekiMei": "上枝"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "340",
+        "ekiMei": "飛騨国府"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "350",
+        "ekiMei": "飛騨古川"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "360",
+        "ekiMei": "杉崎"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "370",
+        "ekiMei": "飛騨細江"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "380",
+        "ekiMei": "角川"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "390",
+        "ekiMei": "坂上"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "400",
+        "ekiMei": "打保"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "410",
+        "ekiMei": "杉原"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ",
+        "kudariJun": "420",
+        "ekiMei": "猪谷"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "10",
+        "ekiMei": "名古屋"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "20",
+        "ekiMei": "金山"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "30",
+        "ekiMei": "鶴舞"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "40",
+        "ekiMei": "千種"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "50",
+        "ekiMei": "大曽根"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "60",
+        "ekiMei": "新守山"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "70",
+        "ekiMei": "勝川"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "80",
+        "ekiMei": "春日井"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "90",
+        "ekiMei": "神領"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "100",
+        "ekiMei": "高蔵寺"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "110",
+        "ekiMei": "定光寺"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "120",
+        "ekiMei": "古虎渓"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "130",
+        "ekiMei": "多治見"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "140",
+        "ekiMei": "土岐市"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "150",
+        "ekiMei": "瑞浪"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "160",
+        "ekiMei": "釜戸"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "170",
+        "ekiMei": "武並"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "180",
+        "ekiMei": "恵那"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "190",
+        "ekiMei": "美乃坂本"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "200",
+        "ekiMei": "中津川"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "210",
+        "ekiMei": "落合川"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "220",
+        "ekiMei": "坂下"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "230",
+        "ekiMei": "田立"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "240",
+        "ekiMei": "南木曽"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "250",
+        "ekiMei": "十二兼"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "260",
+        "ekiMei": "野尻"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "270",
+        "ekiMei": "大桑"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "280",
+        "ekiMei": "須原"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "290",
+        "ekiMei": "倉本"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "300",
+        "ekiMei": "上松"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "310",
+        "ekiMei": "木曽福島"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "320",
+        "ekiMei": "原野"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "330",
+        "ekiMei": "宮ノ越"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "340",
+        "ekiMei": "藪原"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "350",
+        "ekiMei": "奈良井"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "360",
+        "ekiMei": "木曽平沢"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "370",
+        "ekiMei": "贄川"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "380",
+        "ekiMei": "日出塩"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "390",
+        "ekiMei": "洗馬"
+    },
+    {
+        "ryokakuSenkuMei": "しなの",
+        "kudariJun": "400",
+        "ekiMei": "塩尻"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "10",
+        "ekiMei": "名古屋"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "20",
+        "ekiMei": "八田"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "30",
+        "ekiMei": "春田"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "40",
+        "ekiMei": "蟹江"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "50",
+        "ekiMei": "永和"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "60",
+        "ekiMei": "弥富"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "70",
+        "ekiMei": "長島"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "80",
+        "ekiMei": "桑名"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "90",
+        "ekiMei": "朝日"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "100",
+        "ekiMei": "富田"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "110",
+        "ekiMei": "富田浜"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "120",
+        "ekiMei": "四日市"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "130",
+        "ekiMei": "南四日市"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "140",
+        "ekiMei": "河原田"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "150",
+        "ekiMei": "鈴鹿"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "160",
+        "ekiMei": "玉垣"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "170",
+        "ekiMei": "鈴鹿サーキット稲生"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "190",
+        "ekiMei": "中瀬古"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "200",
+        "ekiMei": "河芸"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "220",
+        "ekiMei": "津"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "230",
+        "ekiMei": "阿漕"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "240",
+        "ekiMei": "高茶屋"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "250",
+        "ekiMei": "六軒"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "260",
+        "ekiMei": "松阪"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "270",
+        "ekiMei": "徳和"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "280",
+        "ekiMei": "多気"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "290",
+        "ekiMei": "相可"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "300",
+        "ekiMei": "佐奈"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "310",
+        "ekiMei": "栃原"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "320",
+        "ekiMei": "川添"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "330",
+        "ekiMei": "三瀬谷"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "340",
+        "ekiMei": "滝原"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "350",
+        "ekiMei": "阿曽"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "360",
+        "ekiMei": "伊勢柏崎"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "370",
+        "ekiMei": "大内山"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "380",
+        "ekiMei": "梅ケ谷"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "390",
+        "ekiMei": "紀伊長島"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "400",
+        "ekiMei": "三野瀬"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "410",
+        "ekiMei": "船津"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "420",
+        "ekiMei": "相賀"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "430",
+        "ekiMei": "尾鷲"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "440",
+        "ekiMei": "大曽根浦"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "450",
+        "ekiMei": "九鬼"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "460",
+        "ekiMei": "三木里"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "470",
+        "ekiMei": "賀田"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "480",
+        "ekiMei": "二木島"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "490",
+        "ekiMei": "新鹿"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "500",
+        "ekiMei": "波田須"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "510",
+        "ekiMei": "大泊"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "520",
+        "ekiMei": "熊野市"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "530",
+        "ekiMei": "有井"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "540",
+        "ekiMei": "神志山"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "550",
+        "ekiMei": "紀伊市木"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "560",
+        "ekiMei": "阿田和"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "570",
+        "ekiMei": "紀伊井田"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "580",
+        "ekiMei": "鵜殿"
+    },
+    {
+        "ryokakuSenkuMei": "南紀",
+        "kudariJun": "590",
+        "ekiMei": "新宮"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "10",
+        "ekiMei": "豊橋"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "20",
+        "ekiMei": "船町"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "30",
+        "ekiMei": "下地"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "40",
+        "ekiMei": "小坂井"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "50",
+        "ekiMei": "牛久保"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "60",
+        "ekiMei": "豊川"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "70",
+        "ekiMei": "三河一宮"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "80",
+        "ekiMei": "長山"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "90",
+        "ekiMei": "江島"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "100",
+        "ekiMei": "東上"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "110",
+        "ekiMei": "野田城"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "120",
+        "ekiMei": "新城"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "130",
+        "ekiMei": "東新町"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "140",
+        "ekiMei": "茶臼山"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "150",
+        "ekiMei": "三河東郷"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "160",
+        "ekiMei": "大海"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "170",
+        "ekiMei": "鳥居"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "180",
+        "ekiMei": "長篠城"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "190",
+        "ekiMei": "本長篠"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "200",
+        "ekiMei": "三河大野"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "210",
+        "ekiMei": "湯谷温泉"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "220",
+        "ekiMei": "三河槙原"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "230",
+        "ekiMei": "柿平"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "240",
+        "ekiMei": "三河川合"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "250",
+        "ekiMei": "池場"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "260",
+        "ekiMei": "東栄"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "270",
+        "ekiMei": "出馬"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "280",
+        "ekiMei": "上市場"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "290",
+        "ekiMei": "浦川"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "300",
+        "ekiMei": "早瀬"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "310",
+        "ekiMei": "下川合"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "320",
+        "ekiMei": "中部天竜"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "330",
+        "ekiMei": "佐久間"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "340",
+        "ekiMei": "相月"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "350",
+        "ekiMei": "城西"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "360",
+        "ekiMei": "向市場"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "370",
+        "ekiMei": "水窪"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "380",
+        "ekiMei": "大嵐"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "390",
+        "ekiMei": "小和田"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "400",
+        "ekiMei": "中井侍"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "410",
+        "ekiMei": "伊那小沢"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "420",
+        "ekiMei": "鶯巣"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "430",
+        "ekiMei": "平岡"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "440",
+        "ekiMei": "為栗"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "450",
+        "ekiMei": "温田"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "460",
+        "ekiMei": "田本"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "470",
+        "ekiMei": "門島"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "480",
+        "ekiMei": "唐笠"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "490",
+        "ekiMei": "金野"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "500",
+        "ekiMei": "千代"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "510",
+        "ekiMei": "天竜峡"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "520",
+        "ekiMei": "川路"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "530",
+        "ekiMei": "時又"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "540",
+        "ekiMei": "駄科"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "550",
+        "ekiMei": "毛賀"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "560",
+        "ekiMei": "伊那八幡"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "570",
+        "ekiMei": "下山村"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "580",
+        "ekiMei": "鼎"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "590",
+        "ekiMei": "切石"
+    },
+    {
+        "ryokakuSenkuMei": "伊那路",
+        "kudariJun": "600",
+        "ekiMei": "飯田"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "10",
+        "ekiMei": "静岡"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "20",
+        "ekiMei": "東静岡"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "30",
+        "ekiMei": "草薙"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "40",
+        "ekiMei": "清水"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "50",
+        "ekiMei": "興津"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "60",
+        "ekiMei": "由比"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "70",
+        "ekiMei": "蒲原"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "80",
+        "ekiMei": "新蒲原"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "90",
+        "ekiMei": "富士川"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "100",
+        "ekiMei": "富士"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "110",
+        "ekiMei": "柚木"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "120",
+        "ekiMei": "竪堀"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "130",
+        "ekiMei": "入山瀬"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "140",
+        "ekiMei": "富士根"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "150",
+        "ekiMei": "源道寺"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "160",
+        "ekiMei": "富士宮"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "170",
+        "ekiMei": "西富士宮"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "180",
+        "ekiMei": "沼久保"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "190",
+        "ekiMei": "芝川"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "200",
+        "ekiMei": "稲子"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "210",
+        "ekiMei": "十島"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "220",
+        "ekiMei": "井出"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "230",
+        "ekiMei": "寄畑"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "240",
+        "ekiMei": "内船"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "250",
+        "ekiMei": "甲斐大島"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "260",
+        "ekiMei": "身延"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "270",
+        "ekiMei": "塩之沢"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "280",
+        "ekiMei": "波高島"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "290",
+        "ekiMei": "下部温泉"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "300",
+        "ekiMei": "甲斐常葉"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "310",
+        "ekiMei": "市ノ瀬"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "320",
+        "ekiMei": "久那土"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "330",
+        "ekiMei": "甲斐岩間"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "340",
+        "ekiMei": "落居"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "350",
+        "ekiMei": "鰍沢口"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "360",
+        "ekiMei": "市川大門"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "370",
+        "ekiMei": "市川本町"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "380",
+        "ekiMei": "芦川"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "390",
+        "ekiMei": "甲斐上野"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "400",
+        "ekiMei": "東花輪"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "410",
+        "ekiMei": "小井川"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "420",
+        "ekiMei": "常永"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "430",
+        "ekiMei": "国母"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "440",
+        "ekiMei": "甲斐住吉"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "450",
+        "ekiMei": "南甲府"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "460",
+        "ekiMei": "善光寺"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "470",
+        "ekiMei": "金手"
+    },
+    {
+        "ryokakuSenkuMei": "ふじかわ",
+        "kudariJun": "480",
+        "ekiMei": "甲府"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "10",
+        "ekiMei": "名古屋"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "20",
+        "ekiMei": "枇杷島"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "30",
+        "ekiMei": "清洲"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "40",
+        "ekiMei": "稲沢"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "50",
+        "ekiMei": "尾張一宮"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "60",
+        "ekiMei": "木曽川"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "70",
+        "ekiMei": "岐阜"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "80",
+        "ekiMei": "西岐阜"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "90",
+        "ekiMei": "穂積"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "100",
+        "ekiMei": "大垣"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "110",
+        "ekiMei": "垂井"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "120",
+        "ekiMei": "関ケ原"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "130",
+        "ekiMei": "柏原"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "140",
+        "ekiMei": "近江長岡"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "150",
+        "ekiMei": "醒ケ井"
+    },
+    {
+        "ryokakuSenkuMei": "しらさぎ",
+        "kudariJun": "160",
+        "ekiMei": "米原"
+    },
+    {
+        "ryokakuSenkuMei": "ふじさん",
+        "kudariJun": "50",
+        "ekiMei": "松田"
+    },
+    {
+        "ryokakuSenkuMei": "ふじさん",
+        "kudariJun": "60",
+        "ekiMei": "東山北"
+    },
+    {
+        "ryokakuSenkuMei": "ふじさん",
+        "kudariJun": "70",
+        "ekiMei": "山北"
+    },
+    {
+        "ryokakuSenkuMei": "ふじさん",
+        "kudariJun": "80",
+        "ekiMei": "谷峨"
+    },
+    {
+        "ryokakuSenkuMei": "ふじさん",
+        "kudariJun": "90",
+        "ekiMei": "駿河小山"
+    },
+    {
+        "ryokakuSenkuMei": "ふじさん",
+        "kudariJun": "100",
+        "ekiMei": "足柄"
+    },
+    {
+        "ryokakuSenkuMei": "ふじさん",
+        "kudariJun": "110",
+        "ekiMei": "御殿場"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "10",
+        "ekiMei": "名古屋"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "20",
+        "ekiMei": "八田"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "30",
+        "ekiMei": "春田"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "40",
+        "ekiMei": "蟹江"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "50",
+        "ekiMei": "永和"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "60",
+        "ekiMei": "弥富"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "70",
+        "ekiMei": "長島"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "80",
+        "ekiMei": "桑名"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "90",
+        "ekiMei": "朝日"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "100",
+        "ekiMei": "富田"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "110",
+        "ekiMei": "富田浜"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "120",
+        "ekiMei": "四日市"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "130",
+        "ekiMei": "南四日市"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "140",
+        "ekiMei": "河原田"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "150",
+        "ekiMei": "鈴鹿"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "160",
+        "ekiMei": "玉垣"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "170",
+        "ekiMei": "鈴鹿サーキット稲生"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "190",
+        "ekiMei": "中瀬古"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "200",
+        "ekiMei": "河芸"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "220",
+        "ekiMei": "津"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "230",
+        "ekiMei": "阿漕"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "240",
+        "ekiMei": "高茶屋"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "250",
+        "ekiMei": "六軒"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "260",
+        "ekiMei": "松阪"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "270",
+        "ekiMei": "徳和"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "280",
+        "ekiMei": "多気"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "290",
+        "ekiMei": "外城田"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "300",
+        "ekiMei": "田丸"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "310",
+        "ekiMei": "宮川"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "320",
+        "ekiMei": "山田上口"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "330",
+        "ekiMei": "伊勢市"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "340",
+        "ekiMei": "五十鈴ケ丘"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "350",
+        "ekiMei": "二見浦"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "360",
+        "ekiMei": "松下"
+    },
+    {
+        "ryokakuSenkuMei": "みえ",
+        "kudariJun": "380",
+        "ekiMei": "鳥羽"
+    },
+    {
+        "ryokakuSenkuMei": "美濃赤坂線",
+        "kudariJun": "430",
+        "ekiMei": "大垣"
+    },
+    {
+        "ryokakuSenkuMei": "美濃赤坂線",
+        "kudariJun": "440",
+        "ekiMei": "荒尾"
+    },
+    {
+        "ryokakuSenkuMei": "美濃赤坂線",
+        "kudariJun": "450",
+        "ekiMei": "美濃赤坂"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "10",
+        "ekiMei": "米原"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "20",
+        "ekiMei": "醒ケ井"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "30",
+        "ekiMei": "近江長岡"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "40",
+        "ekiMei": "柏原"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "50",
+        "ekiMei": "関ケ原"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "60",
+        "ekiMei": "垂井"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "70",
+        "ekiMei": "大垣"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "80",
+        "ekiMei": "穂積"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "90",
+        "ekiMei": "西岐阜"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "100",
+        "ekiMei": "岐阜"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "110",
+        "ekiMei": "長森"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "120",
+        "ekiMei": "那加"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "130",
+        "ekiMei": "蘇原"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "140",
+        "ekiMei": "各務ケ原"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "150",
+        "ekiMei": "鵜沼"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "160",
+        "ekiMei": "坂祝"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "170",
+        "ekiMei": "美濃太田"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "180",
+        "ekiMei": "古井"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "190",
+        "ekiMei": "中川辺"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "200",
+        "ekiMei": "下麻生"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "210",
+        "ekiMei": "上麻生"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "220",
+        "ekiMei": "白川口"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "230",
+        "ekiMei": "下油井"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "240",
+        "ekiMei": "飛騨金山"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "250",
+        "ekiMei": "焼石"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "260",
+        "ekiMei": "下呂"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "270",
+        "ekiMei": "禅昌寺"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "280",
+        "ekiMei": "飛騨萩原"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "290",
+        "ekiMei": "上呂"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "300",
+        "ekiMei": "飛騨宮田"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "310",
+        "ekiMei": "飛騨小坂"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "320",
+        "ekiMei": "渚"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "330",
+        "ekiMei": "久々野"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "340",
+        "ekiMei": "飛騨一ノ宮"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "350",
+        "ekiMei": "高山"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "360",
+        "ekiMei": "上枝"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "370",
+        "ekiMei": "飛騨国府"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "380",
+        "ekiMei": "飛騨古川"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "390",
+        "ekiMei": "杉崎"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "400",
+        "ekiMei": "飛騨細江"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "410",
+        "ekiMei": "角川"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "420",
+        "ekiMei": "坂上"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "430",
+        "ekiMei": "打保"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "440",
+        "ekiMei": "杉原"
+    },
+    {
+        "ryokakuSenkuMei": "ひだ（大阪方面）",
+        "kudariJun": "450",
+        "ekiMei": "猪谷"
+    },
+    {
+        "ryokakuSenkuMei": "伊勢鉄道",
+        "kudariJun": "1",
+        "ekiMei": "河原田"
+    },
+    {
+        "ryokakuSenkuMei": "伊勢鉄道",
+        "kudariJun": "2",
+        "ekiMei": "鈴鹿"
+    },
+    {
+        "ryokakuSenkuMei": "伊勢鉄道",
+        "kudariJun": "3",
+        "ekiMei": "玉垣"
+    },
+    {
+        "ryokakuSenkuMei": "伊勢鉄道",
+        "kudariJun": "4",
+        "ekiMei": "鈴鹿サーキット稲生"
+    },
+    {
+        "ryokakuSenkuMei": "伊勢鉄道",
+        "kudariJun": "5",
+        "ekiMei": "中瀬古"
+    },
+    {
+        "ryokakuSenkuMei": "伊勢鉄道",
+        "kudariJun": "6",
+        "ekiMei": "河芸"
+    },
+    {
+        "ryokakuSenkuMei": "伊勢鉄道",
+        "kudariJun": "7",
+        "ekiMei": "津"
+    }
+]
+
