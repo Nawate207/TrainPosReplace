@@ -783,6 +783,10 @@ function AddDispTypeCol(trainType, linename) {//otherはlinename=""を定義し�
             typeCol = '<span class="directrapid">直通快速</span> うれしート ×';
             return typeCol;
         }
+        case "快速みえ": {
+            typeCol = '<span class="newrapid">' + trainType + '</span>';
+            return typeCol;
+        }
         case "特急": {
             typeCol = '<span class="limitedexp">' + trainType + '</span>';
             return typeCol;
@@ -940,7 +944,13 @@ function LineMarkGet(LineMark) {//無印のみ
  * 列車名セット
  * @param {*} nickname 
  */
-function nicknameSet(nickname) {//otherのみ
+function nicknameSet(nickname, nickname_no, line) {//other,jrc
+    switch(line){
+        case "central": {
+            if (nickname == null || nickname_no == '-1') return "";
+            else return (nickname + nickname_no + "号");
+        }
+    }
     if (nickname == null) return "";
     else return nickname;
 }
@@ -1136,7 +1146,7 @@ function trainElementWestOther(train) {
     const line = "";
     const DispTypeAddCol = AddDispTypeCol(train.displayType, line);
     const DestAddCol = AddDestCol(train.dest);
-    const nickname = nicknameSet(train.nickname);
+    const nickname = nicknameSet(train.nickname, "", "");
     const direction = directionSet(train.direction, line);
     const delayMinutes = delayMinutesSet(train.delayMinutes);
     const position = StaGet_WestOther(train.pos);
@@ -1177,7 +1187,7 @@ function trainElementCentral_202603(train) {
     const line = 'central';
     const DispTypeAddCol = AddDispTypeCol(train.traintype[0].name, line);
     const DestAddCol = AddDestCol(train.tostation[0].name);
-    const nickname = nicknameSet(train.nickname[0].name);
+    const nickname = nicknameSet(train.nickname[0].name, train.nickname_no, line);
     const direction = directionSet(train.locationCol, line);
     const delayMinutes = delayMinutesSet(train.delay_lin);
     const position = StaGet_Central(train.linename[0].name, train.locationRow, train.position);
