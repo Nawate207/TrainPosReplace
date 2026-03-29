@@ -338,19 +338,17 @@ const CentralAreaLine = [
         'line': '参宮線',
         'sectionId': 'lineBtnCentral',
         'flowType': 'Jrc'
-    },
-    {
+    }, {
+        'code': 'zaisenichijoho_99999',
+        'line': 'CA 美濃赤坂線',
+        'sectionId': 'lineBtnCentral',
+        'flowType': 'Jrc'
+    }, {
         'code': 'zaisenichijoho_99999',
         'line': '伊勢鉄道',
         'sectionId': 'lineBtnCentral',
         'flowType': 'Jrc'
-    },
-    {
-        'code': 'zaisenichijoho_99999',
-        'line': '美濃赤坂線',
-        'sectionId': 'lineBtnCentral',
-        'flowType': 'Jrc'
-    // }, 
+    }
     // // 有料列車
     // {
     //     'code': 'zaisenichijoho_30001',
@@ -392,7 +390,7 @@ const CentralAreaLine = [
     //     'line': 'みえ',
     //     'sectionId': 'lineBtnCentral',
     //     'flowType': 'Jrc'
-    }
+    // }
 ];
 
 /// クラス定義
@@ -434,18 +432,6 @@ class TrainWestOther {
 
 // JRC
 class TrainCentral {
-    constructor() {
-        this.no = "";
-        this.dest = "";
-        this.direction = 0;
-        this.displayType = "";
-        this.delayMinutes = 0;
-        this.nickname = "";
-        this.pos = "";
-        this.ekikanKbn = 0;
-    }
-}
-class TrainCentral_202603 {
     constructor() {
         this.cars = "";
         this.crowded = "";
@@ -579,18 +565,6 @@ function buildTrainWestOther(obj) {
  */
 function buildTrainCentral(obj) {
     const train = new TrainCentral();
-    train.dest = obj["yukisaki"];
-    train.direction = obj["jogeKbn"];
-    train.delayMinutes = obj["chienJifun"];
-    train.displayType = obj["resshaShubetsuMei"];
-    train.nickname = obj["aishoMei"];
-    train.no = obj["resshaBng"];
-    train.pos = obj["ryokakuEkiCd"];
-    train.ekikanKbn = obj["ekiEkikanKbn"];
-    return train;
-}
-function buildTrainCentral_202603(obj) {
-    const train = new TrainCentral_202603();
     train.cars = obj["cars"]; // 両数？ 2026/3/22時点 値なし
     train.crowded = obj["crowded"]; // 不明 2026/3/22時点 値なし
     train.delay_lin = obj["delay_lin"]; // 遅れ時分
@@ -1144,15 +1118,27 @@ function StaGet_Central(linename, locationRow, position) {
 function posMatch_Central(linename, locationRow) {
     // var regex = new RegExp('[\(]');
     // var line = '';
-    if (linename != '伊勢鉄道') {
-        var row = locationRow * 10;
-    } else var row = locationRow;
+    var row = 0;
+    switch (linename) {
+        default: {
+            row = locationRow * 10;
+            break;
+        }
+        case '伊勢鉄道': {
+            row = locationRow;
+            break;
+        }
+        case '美濃赤坂線': {
+            row = locationRow * 10 + 420;
+            break;
+        }
+    }
     // if(regex.test(linename)){
     //     line = linename.split("(")[0];
     // }else{
     //     line = linename;
     // }
-    return stations_Central_202603.filter(Cstation => {
+    return stations_Central.filter(Cstation => {
         if (Cstation.ryokakuSenkuMei === linename && Cstation.kudariJun === row.toString()) {
             return Cstation.ekiMei;
         }
@@ -1187,14 +1173,6 @@ function viewTrainsCentral(trains, flowType) {
     // const elem = document.getElementById("elem");
     while (child = elem.firstChild) elem.removeChild(child);
     const trainElems = trains.map(trainElementCentral);
-    trainElems.forEach(element => {
-        elem.appendChild(element);
-    });
-}
-function viewTrainsCentral_202603(trains, flowType) {
-    // const elem = document.getElementById("elem");
-    while (child = elem.firstChild) elem.removeChild(child);
-    const trainElems = trains.map(trainElementCentral_202603);
     trainElems.forEach(element => {
         elem.appendChild(element);
     });
@@ -1257,22 +1235,6 @@ function trainElementWestOther(train) {
  * @return {HTMLElement}
  */
 function trainElementCentral(train) {
-    const line = 'central';
-    const DispTypeAddCol = AddDispTypeCol(train.displayType, line);
-    const DestAddCol = AddDestCol(train.dest);
-    const nickname = nicknameSet(train.nickname);
-    const direction = directionSet(train.direction, line);
-    const delayMinutes = delayMinutesSet(train.delayMinutes);
-    const position = StaGet_Central(train.pos, train.ekikanKbn);
-    // const text = `${train.no} ${train.displayType}${nickname} ${train.dest}行き ${delayMinutes} 走行位置：${position}${direction}`;
-    const text = train.no + " " + DispTypeAddCol + " " + nickname + " " + DestAddCol + delayMinutes + " 走行位置：" + position + direction;
-    const elem = document.createElement('div');
-    elem.className = 'kakomi-box3';
-    // elem.innerText = text;
-    elem.innerHTML = text;
-    return elem;
-}
-function trainElementCentral_202603(train) {
     const line = 'central';
     const DispTypeAddCol = AddDispTypeCol(train.traintype[0].name, line);
     const DestAddCol = AddDestCol(train.tostation[0].name);
@@ -1386,7 +1348,7 @@ async function lineClickEvent(linename, flowType, line) {
             case 'JrwOther': trains = body.map(buildTrainWestOther);
                 viewTrainsWest(trains, flowType);
                 break;
-            case 'Jrc': trains = body.map(buildTrainCentral_202603);
+            case 'Jrc': trains = body.map(buildTrainCentral);
                 var regex = new RegExp('[ ]');
                 var displine = '';
                 if (regex.test(line)) {
@@ -1397,7 +1359,7 @@ async function lineClickEvent(linename, flowType, line) {
                 const trainsFilter = trains.filter(train =>
                     train.linename[0].name === displine
                 );
-                viewTrainsCentral_202603(trainsFilter, flowType);
+                viewTrainsCentral(trainsFilter, flowType);
                 break;
         }
 
