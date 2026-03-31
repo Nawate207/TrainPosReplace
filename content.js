@@ -927,7 +927,7 @@ function AddDestCol(trainDest) {
 function centralAddDest2(trainDest, trainNumber) {
     var setTrainDest = "";
     switch (trainDest) {
-        case null: {
+        case '': {
             return '';
         }
         default: {
