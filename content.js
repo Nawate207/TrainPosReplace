@@ -856,6 +856,10 @@ function AddDispTypeCol(trainType, linename) {//otherはlinename=""を定義し�
             typeCol = '<span class="express">' + trainType + '</span>';
             return typeCol;
         }
+        case "ＨＬ": {
+            typeCol = '<span class="express">' + trainType + '</span>';
+            return typeCol;
+        }
         case "関空特急": {
             typeCol = '<span class="limitedexp">' + trainType + '</span>';
             return typeCol;
@@ -910,6 +914,46 @@ function AddDestCol(trainDest) {
         }
         default: {
             return '<span class="destination">' + trainDest + '</span>行き';
+        }
+    }
+}
+
+/**
+ * 東海エリア：第2行先設定
+ * ★暫定対応、本格的にやるなら「https://traininfo.jr-central.co.jp/zairaisen/data/kobetsujikoku.json」を叩く
+ * @param {*} trainDest 
+ * @param {*} trainNumber 
+ */
+function centralAddDest2(trainDest, trainNumber) {
+    var setTrainDest = "";
+    switch (trainDest) {
+        case null: {
+            return '';
+        }
+        default: {
+            switch(trainNumber){
+                case '5031M':{
+                    setTrainDest = '出雲市'
+                    break;
+                }
+                case '8041M':{
+                    setTrainDest = '出雲市'
+                    break;
+                }
+                case '205M':{
+                    setTrainDest = '松本'
+                    break;
+                }
+                case '106F':{
+                    setTrainDest = '武豊'
+                    break;
+                }
+                case '3106F':{
+                    setTrainDest = '武豊'
+                    break;
+                }
+            }
+            return '<span class="destination">' + setTrainDest + '</span>行き';
         }
     }
 }
@@ -1008,7 +1052,8 @@ function LineMarkGet(LineMark) {//無印のみ
 function nicknameSet(nickname, nickname_no, line) {//other,jrc
     switch (line) {
         case "central": {
-            if (nickname == null || nickname_no == '-1') return "";
+            if (nickname != null && nickname_no == '-1') return nickname;
+            else if (nickname == null || nickname_no == '-1') return "";
             else return (nickname + nickname_no + "号");
         }
     }
@@ -1187,6 +1232,7 @@ function trainElementWestUrban(train) {
     const line = "";
     var ureSeatInfo = "";
     var typeChange = "";
+    var otherInfo = "";
 
     const DispTypeAddCol = AddDispTypeCol(train.displayType, train.dest.line);
     const DestAddCol = AddDestCol(train.dest.text);
@@ -1197,18 +1243,23 @@ function trainElementWestUrban(train) {
     // const position = stationGet(train.pos);
     const aSeatInfo = train.aSeatInfo === "" ? "" : " " + train.aSeatInfo + " ";
     const tmp_typeChange = train.typeChange;
-    if (tmp_typeChange.includes('\n')) {
-        ureSeatInfo = tmp_typeChange.split('\n')[0];
-        typeChange = tmp_typeChange.split('\n')[1];
-    } else if((tmp_typeChange != '')) {
-        ureSeatInfo = tmp_typeChange.includes('うれしート') ? tmp_typeChange : "";
-        typeChange = tmp_typeChange.includes('うれしート') ? "" : tmp_typeChange;
-    }else{
+    if (tmp_typeChange.includes('\n（有料座席）')) {
+        ureSeatInfo = " " + tmp_typeChange + " ";
+        typeChange = "";
+    } else if (tmp_typeChange.includes('\n')) {
+        ureSeatInfo = " " + tmp_typeChange.split('\n')[0] + " ";
+        typeChange = " " + tmp_typeChange.split('\n')[1] + " ";
+    } else if (tmp_typeChange.includes('運転日により停車駅が異なります')) {
+        otherInfo = " " + tmp_typeChange + " ";
+    } else if ((tmp_typeChange != '')) {
+        ureSeatInfo = tmp_typeChange.includes('うれしート') ? " " + tmp_typeChange + " " : "";
+        typeChange = tmp_typeChange.includes('うれしート') ? "" : " " + tmp_typeChange + " ";
+    } else {
         ureSeatInfo = "";
         typeChange = "";
     }
     // const text = `${train.no} ${train.displayType}${train.nickname} ${train.typeChange} ${train.via} ${train.dest.text}行き ${train.numberOfCars}両 ${delayMinutes} 走行位置：${position}${direction}`;
-    const text = train.no + " " + LineMark + DispTypeAddCol + " " + train.nickname + " " + typeChange + " " + train.via + " " + DestAddCol + " " + train.numberOfCars + "両 " + delayMinutes + " 走行位置：" + position + direction + aSeatInfo + ureSeatInfo;
+    const text = train.no + " " + LineMark + DispTypeAddCol + " " + train.nickname + " " + typeChange + " " + train.via + " " + DestAddCol + " " + train.numberOfCars + "両 " + delayMinutes + " 走行位置：" + position + direction + aSeatInfo + otherInfo + ureSeatInfo;
     // const text = train.no + " " + LineMark + DispTypeAddCol + train.nickname + " " + train.typeChange + " " + train.via + " " + DestAddCol + "行き " + train.numberOfCars + "両 " + delayMinutes + " 走行位置：" + direction;
     const elem = document.createElement('div');
     // elem.className = 'kakomi-box3';
@@ -1235,20 +1286,22 @@ function trainElementWestOther(train) {
     const delayMinutes = delayMinutesSet(train.delayMinutes);
     const position = StaGet_WestOther(train.pos);
     // const position = stationGet(train.pos);
-    const notice = train.notice === null ? "" : " " + train.notice + " ";
+    // const notice = train.notice === null ? "" : " " + train.notice + " ";
     const tmp_notice = train.notice;
     if (tmp_notice != null && tmp_notice.includes('\n')) {
-        ureSeatInfo = tmp_notice.split('\n')[0];
-        typeChange = tmp_notice.split('\n')[1];
-    } else if((tmp_notice != null && tmp_notice != '')) {
-        ureSeatInfo = tmp_notice.includes('うれしート') ? tmp_notice : "";
-        typeChange = tmp_notice.includes('うれしート') ? "" : tmp_notice;
-    }else{
+        ureSeatInfo = " " + tmp_notice.split('\n')[0] + " ";
+        typeChange = " " + tmp_notice.split('\n')[1] + " ";
+    } else if (tmp_notice != null && !(tmp_notice.includes('\n'))) {
+        typeChange = " " + tmp_notice + " ";
+    } else if ((tmp_notice != null && tmp_notice != '')) {
+        ureSeatInfo = tmp_notice.includes('うれしート') ? " " + tmp_notice + " " : "";
+        typeChange = tmp_notice.includes('うれしート') ? "" : " " + tmp_notice + " ";
+    } else {
         ureSeatInfo = "";
         typeChange = "";
     }
     // const text = `${train.no} ${train.displayType}${nickname} ${train.dest}行き ${delayMinutes} 走行位置：${position}${direction}`;
-    const text = train.no + " " + DispTypeAddCol + " " + typeChange + nickname + " " + DestAddCol + " " + delayMinutes + " 走行位置：" + position + direction + ureSeatInfo;
+    const text = train.no + " " + DispTypeAddCol + typeChange + nickname + " " + DestAddCol + " " + delayMinutes + " 走行位置：" + position + direction + ureSeatInfo;
     // const text = train.no + " " + DispTypeAddCol + nickname + " " + DestAddCol + "行き " + delayMinutes + " 走行位置：" + direction;
     const elem = document.createElement('div');
     elem.className = 'kakomi-box3';
@@ -1266,12 +1319,13 @@ function trainElementCentral(train) {
     const line = 'central';
     const DispTypeAddCol = AddDispTypeCol(train.traintype[0].name, line);
     const DestAddCol = AddDestCol(train.tostation[0].name);
+    const Dest2AddCol = centralAddDest2(train.tostation2[0].name, train.trainnumber) === "" ? "" : '・' + centralAddDest2(train.tostation2[0].name, train.trainnumber);
     const nickname = nicknameSet(train.nickname[0].name, train.nickname_no, line);
     const direction = directionSet(train.locationCol, line);
     const delayMinutes = delayMinutesSet(train.delay_lin);
     const position = StaGet_Central(train.linename[0].name, train.locationRow, train.position);
     // const text = `${train.no} ${train.displayType}${nickname} ${train.dest}行き ${delayMinutes} 走行位置：${position}${direction}`;
-    const text = train.trainnumber + " " + DispTypeAddCol + " " + nickname + " " + DestAddCol + " " + delayMinutes + " 走行位置：" + position + direction;
+    const text = train.trainnumber + " " + DispTypeAddCol + " " + nickname + " " + DestAddCol + Dest2AddCol + " " + delayMinutes + " 走行位置：" + position + direction;
     const elem = document.createElement('div');
     elem.className = 'kakomi-box3';
     // elem.innerText = text;
