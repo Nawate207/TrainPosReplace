@@ -348,6 +348,11 @@ const CentralAreaLine = [
         'line': '伊勢鉄道',
         'sectionId': 'lineBtnCentral',
         'flowType': 'Jrc'
+    }, {
+        'code': 'Aonami',
+        'line': 'あおなみ線',
+        'sectionId': 'lineBtnCentral',
+        'flowType': 'Aonami'
     }
     // // 有料列車
     // {
@@ -391,6 +396,57 @@ const CentralAreaLine = [
     //     'sectionId': 'lineBtnCentral',
     //     'flowType': 'Jrc'
     // }
+];
+
+const JreAreaLine = [
+    {
+        'code': '3001',
+        'line': 'しなの鉄道線',
+        'sectionId': 'lineBtnJreNagano',
+        'flowType': 'JreOther'
+    },
+    {
+        'code': '3002',
+        'line': '北しなの線',
+        'sectionId': 'lineBtnJreNagano',
+        'flowType': 'JreOther'
+    },
+    {
+        'code': '1421',
+        'line': '中央東線',
+        'sectionId': 'lineBtnJreNagano',
+        'flowType': 'JreOther'
+    },
+    {
+        'code': '1422',
+        'line': '中央東線（辰野支線）',
+        'sectionId': 'lineBtnJreNagano',
+        'flowType': 'JreOther'
+    },
+    {
+        'code': '127',
+        'line': '大糸線',
+        'sectionId': 'lineBtnJreNagano',
+        'flowType': 'JreOther'
+    },
+    {
+        'code': '128',
+        'line': '小海線',
+        'sectionId': 'lineBtnJreNagano',
+        'flowType': 'JreOther'
+    },
+    {
+        'code': '804',
+        'line': '北しなの線・飯山線',
+        'sectionId': 'lineBtnJreNagano',
+        'flowType': 'JreOther'
+    },
+    {
+        'code': '805',
+        'line': '篠ノ井線・信越線',
+        'sectionId': 'lineBtnJreNagano',
+        'flowType': 'JreOther'
+    }
 ];
 
 /// クラス定義
@@ -450,6 +506,18 @@ class TrainCentral {
         this.tostation2 = {};
         this.trainnumber = "";
         this.traintype = {};
+    }
+}
+
+// Aonami
+class TrainAonami {
+    constructor() {
+        this.position = "";
+        this.trainnumber = "";
+        this.sy = "";
+        this.tostation = "";
+        this.delay = "";
+        this.locationCol = "";
     }
 }
 
@@ -582,6 +650,48 @@ function buildTrainCentral(obj) {
     train.tostation2 = obj["tostation2"]; // 2階建て列車用行先？ 例：浜松・武豊
     train.trainnumber = obj["trainnumber"]; // 列車番号
     train.traintype = obj["traintype"]; // 列車種別
+    return train;
+}
+
+/**
+ * 取得したデータをマッピング
+ * 列車情報クラス - Aonami
+ * @param {*} obj 
+ * @return {TrainAonami}
+ */
+function buildTrainAonami(obj) {
+    const train = new TrainAonami();
+    train.position = obj["id"]; // 走行位置
+    train.trainnumber = obj.tr[0]["no"]; // 列車番号
+    train.traintype = obj.tr[0]["sy"]; // 種別？
+    train.tostation = obj.tr[0]["ik"]; // 行先
+    train.delay = obj.tr[0]["dl"]; // 遅れ時分
+    train.locationCol = obj.tr[0]["hk"]; // 上下区分 0=上り, 1=下り
+    return train;
+}
+
+/**
+ * 取得したデータをマッピング
+ * 列車情報クラス - JRE地方
+ * @param {*} obj 
+ * @return {TrainJreOther}
+ */
+function buildTrainJreOther(obj) {
+    const train = new TrainJreOther();
+    train.dest = obj["END_STATION"]; // 行先
+    train.prevSt = obj["PRE_STATION"]; // 前駅
+    train.startSt = obj["STA_STATION"]; // 始発駅
+    train.currentSt = obj["CUR_STATION"]; // 現在駅
+    train.positionSt = obj["POS_STATION"]; // 次駅
+    train.direction = obj["BOUND"]; // 進行方向 上り=1/下り=2
+    train.delayMinutes = obj["LATENCY"]; // 遅れ時分
+    train.displayType = obj["displayType"];
+    train.nickname = obj["TRAIN_NNAME"]; // 列車名
+    train.trainno = obj["TRAIN_NNO"]; // 列車号数
+    train.no = obj["TRAIN_LCLID"]; // 列車番号
+    train.pos = obj["pos"];
+    train.type = obj["type"];
+    train.notice = obj["notice"];
     return train;
 }
 
@@ -904,6 +1014,33 @@ function AddDispTypeCol(trainType, linename) {//otherはlinename=""を定義し�
 }
 
 /**
+ * 種別色付け
+ * @param {*} trainType 
+ * @param {*} linename
+ */
+function AddDispTypeMapCol(trainType, linename) {
+    switch (linename) {
+        case "aonami": {
+            switch (trainType) {
+                case "1": {
+                    return '<span class="local">普通</span>';
+                }
+                case "6": {
+                    return '<span class="extra">ノンストップ</span>';
+                }
+                default: {
+                    return trainType;
+                }
+            }
+            return '';
+        }
+        default: {
+            return trainType;
+        }
+    }
+}
+
+/**
  * 行先色付け
  * @param {*} trainDest 
  */
@@ -911,6 +1048,24 @@ function AddDestCol(trainDest) {
     switch (trainDest) {
         case null: {
             return '';
+        }
+        default: {
+            return '<span class="destination">' + trainDest + '</span>行き';
+        }
+    }
+}
+
+/**
+ * 行先色付け
+ * @param {*} trainDest 
+ */
+function AddDestMapCol(trainDest, line) {
+    switch (line) {
+        case "aonami": {
+            const staInfo = stations_Central.filter(Aostation => {
+                if (Aostation.kudariJun === trainDest && Aostation.ryokakuSenkuMei === "あおなみ線") return Aostation;
+            });
+            return staInfo[0].ekiMei;
         }
         default: {
             return '<span class="destination">' + trainDest + '</span>行き';
@@ -931,24 +1086,24 @@ function centralAddDest2(trainDest, trainNumber) {
             return '';
         }
         default: {
-            switch(trainNumber){
-                case '5031M':{
+            switch (trainNumber) {
+                case '5031M': {
                     setTrainDest = '出雲市'
                     break;
                 }
-                case '8041M':{
+                case '8041M': {
                     setTrainDest = '出雲市'
                     break;
                 }
-                case '205M':{
+                case '205M': {
                     setTrainDest = '松本'
                     break;
                 }
-                case '106F':{
+                case '106F': {
                     setTrainDest = '武豊'
                     break;
                 }
-                case '3106F':{
+                case '3106F': {
                     setTrainDest = '武豊'
                     break;
                 }
@@ -1190,6 +1345,22 @@ function posMatch_Central(linename, locationRow) {
     });
 }
 
+/**
+ * 駅情報取得 - Aonami
+ * @param {string} pos 
+ */
+function StaGet_Other(pos, line) {
+    switch (line) {
+        case "aonami": {
+            const position = pos.replace(/[A-Z]/, '') && pos.replace('0', '');
+            const staInfo = stations_Central.filter(Aostation => {
+                if (Aostation.kudariJun === position && Aostation.ryokakuSenkuMei === "あおなみ線") return Aostation;
+            });
+            return staInfo[0].ekiMei;
+        }
+    };
+}
+
 // 列車情報出力準備
 /**
  * 
@@ -1218,6 +1389,19 @@ function viewTrainsCentral(trains, flowType) {
     // const elem = document.getElementById("elem");
     while (child = elem.firstChild) elem.removeChild(child);
     const trainElems = trains.map(trainElementCentral);
+    trainElems.forEach(element => {
+        elem.appendChild(element);
+    });
+}
+
+/**
+ * 出力する列車情報を成形 - Aonami
+ * @param {Train[]} trains 
+ */
+function viewTrainsAonami(trains, flowType) {
+    // const elem = document.getElementById("elem");
+    while (child = elem.firstChild) elem.removeChild(child);
+    const trainElems = trains.map(trainElementAonami);
     trainElems.forEach(element => {
         elem.appendChild(element);
     });
@@ -1311,7 +1495,7 @@ function trainElementWestOther(train) {
 }
 
 /**
- * 
+ * 出力する列車情報を成形 - JRC
  * @param {Train} train 
  * @return {HTMLElement}
  */
@@ -1326,6 +1510,33 @@ function trainElementCentral(train) {
     const position = StaGet_Central(train.linename[0].name, train.locationRow, train.position);
     // const text = `${train.no} ${train.displayType}${nickname} ${train.dest}行き ${delayMinutes} 走行位置：${position}${direction}`;
     const text = train.trainnumber + " " + DispTypeAddCol + " " + nickname + " " + DestAddCol + Dest2AddCol + " " + delayMinutes + " 走行位置：" + position + direction;
+    const elem = document.createElement('div');
+    elem.className = 'kakomi-box3';
+    // elem.innerText = text;
+    elem.innerHTML = text;
+    return elem;
+}
+
+/**
+ * 出力する列車情報を成形 - JRC
+ * @param {Train} train 
+ * @return {HTMLElement}
+ */
+function trainElementAonami(train) {
+    train.position = obj["id"]; // 走行位置
+    train.trainnumber = obj.tr[0]["no"]; // 列車番号
+    train.traintype = obj.tr[0]["sy"]; // 種別？
+    train.tostation = obj.tr[0]["ik"]; // 行先
+    train.delay = obj.tr[0]["dl"]; // 遅れ時分
+    train.locationCol = obj.tr[0]["hk"]; // 上下区分 0=上り, 1=下り
+
+    const line = 'aonami';
+    const DispTypeAddCol = AddDispTypeMapCol(train.traintype, line);
+    const DestAddCol = AddDestMapCol(train.tostation, line);
+    const direction = directionSet(train.locationCol, line);
+    const delayMinutes = delayMinutesSet(train.delay);
+    const position = StaGet_Other(train.position, line);
+    const text = train.trainnumber + " " + DispTypeAddCol + " " + DestAddCol + " " + delayMinutes + " 走行位置：" + position + direction;
     const elem = document.createElement('div');
     elem.className = 'kakomi-box3';
     // elem.innerText = text;
@@ -1443,6 +1654,12 @@ async function lineClickEvent(linename, flowType, line) {
                 );
                 viewTrainsCentral(trainsFilter, flowType);
                 break;
+            case 'Aonami': trains = body.map(buildTrainAonami);
+                viewTrainsAonami(trains, flowType);
+                break;
+            case 'JreOther': trains = body.map(buildTrainJreOther);
+                viewTrainsJreOther(trains, flowType);
+                break;
         }
 
         // エラー発生時にキャッチしてメッセージを返す
@@ -1459,6 +1676,7 @@ window.addEventListener('load', () => {
     HiroSekiAreaLine.map(k => lineButton(k.code, k.line, k.sectionId, k.flowType));
     SaninAreaLine.map(k => lineButton(k.code, k.line, k.sectionId, k.flowType));
     CentralAreaLine.map(k => lineButton(k.code, k.line, k.sectionId, k.flowType));
+    JreAreaLine.map(k => lineButton(k.code, k.line, k.sectionId, k.flowType));
 })
 
 /*

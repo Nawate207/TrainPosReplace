@@ -7219,6 +7219,949 @@ var stations_Central = [
         "ryokakuSenkuMei": "伊勢鉄道",
         "kudariJun": "7",
         "ekiMei": "津"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "2",
+        "ekiMei": "名古屋"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "3",
+        "ekiMei": "ささしまライブ"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "4",
+        "ekiMei": "笹島"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "5",
+        "ekiMei": "小本"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "6",
+        "ekiMei": "荒子"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "7",
+        "ekiMei": "南荒子"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "8",
+        "ekiMei": "中島"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "9",
+        "ekiMei": "港北"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "10",
+        "ekiMei": "荒子川公園"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "11",
+        "ekiMei": "稲永"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "12",
+        "ekiMei": "潮凪信号場"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "13",
+        "ekiMei": "野跡"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "14",
+        "ekiMei": "金城ふ頭"
+    },
+    {
+        "ryokakuSenkuMei": "あおなみ線",
+        "kudariJun": "18",
+        "ekiMei": "潮凪車庫"
     }
 ]
 
+// 駅一覧 - JREその他
+var stations_jreOther = [
+    {
+        "STATION_ID": "2241805590",
+        "STATION_NAME_KANJI": "小淵沢",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114010",
+        "STATION_NAME_KANJI": "甲斐小泉",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114020",
+        "STATION_NAME_KANJI": "甲斐大泉",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114030",
+        "STATION_NAME_KANJI": "清里",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114040",
+        "STATION_NAME_KANJI": "野辺山",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114050",
+        "STATION_NAME_KANJI": "信濃川上",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114060",
+        "STATION_NAME_KANJI": "佐久広瀬",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114070",
+        "STATION_NAME_KANJI": "佐久海ノ口",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114080",
+        "STATION_NAME_KANJI": "海尻",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114090",
+        "STATION_NAME_KANJI": "松原湖",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114100",
+        "STATION_NAME_KANJI": "小海",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114110",
+        "STATION_NAME_KANJI": "馬流",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114120",
+        "STATION_NAME_KANJI": "高岩",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114130",
+        "STATION_NAME_KANJI": "八千穂",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114140",
+        "STATION_NAME_KANJI": "海瀬",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114150",
+        "STATION_NAME_KANJI": "羽黒下",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114160",
+        "STATION_NAME_KANJI": "青沼",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114170",
+        "STATION_NAME_KANJI": "臼田",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114180",
+        "STATION_NAME_KANJI": "龍岡城",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114190",
+        "STATION_NAME_KANJI": "太田部",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114200",
+        "STATION_NAME_KANJI": "中込",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114210",
+        "STATION_NAME_KANJI": "滑津",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114220",
+        "STATION_NAME_KANJI": "北中込",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114230",
+        "STATION_NAME_KANJI": "岩村田",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251102020",
+        "STATION_NAME_KANJI": "佐久平",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114240",
+        "STATION_NAME_KANJI": "中佐都",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114280",
+        "STATION_NAME_KANJI": "美里",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114250",
+        "STATION_NAME_KANJI": "三岡",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114260",
+        "STATION_NAME_KANJI": "乙女",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251114270",
+        "STATION_NAME_KANJI": "東小諸",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251111030",
+        "STATION_NAME_KANJI": "小諸",
+        "LINE_NAME": "小海線"
+    },
+    {
+        "STATION_ID": "2251115040",
+        "STATION_NAME_KANJI": "松本",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106010",
+        "STATION_NAME_KANJI": "北松本",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106020",
+        "STATION_NAME_KANJI": "島内",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106030",
+        "STATION_NAME_KANJI": "島高松",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106040",
+        "STATION_NAME_KANJI": "梓橋",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106050",
+        "STATION_NAME_KANJI": "一日市場",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106060",
+        "STATION_NAME_KANJI": "中萱",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106070",
+        "STATION_NAME_KANJI": "南豊科",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106080",
+        "STATION_NAME_KANJI": "豊科",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106090",
+        "STATION_NAME_KANJI": "柏矢町",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106100",
+        "STATION_NAME_KANJI": "穂高",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106110",
+        "STATION_NAME_KANJI": "有明",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106120",
+        "STATION_NAME_KANJI": "安曇追分",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106130",
+        "STATION_NAME_KANJI": "細野",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106140",
+        "STATION_NAME_KANJI": "北細野",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106150",
+        "STATION_NAME_KANJI": "信濃松川",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106160",
+        "STATION_NAME_KANJI": "安曇沓掛",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106170",
+        "STATION_NAME_KANJI": "信濃常盤",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106180",
+        "STATION_NAME_KANJI": "南大町",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106190",
+        "STATION_NAME_KANJI": "信濃大町",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106200",
+        "STATION_NAME_KANJI": "北大町",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106210",
+        "STATION_NAME_KANJI": "信濃木崎",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106220",
+        "STATION_NAME_KANJI": "稲尾",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106230",
+        "STATION_NAME_KANJI": "海ノ口",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106240",
+        "STATION_NAME_KANJI": "簗場",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106250",
+        "STATION_NAME_KANJI": "南神城",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106260",
+        "STATION_NAME_KANJI": "神城",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106270",
+        "STATION_NAME_KANJI": "飯森",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106280",
+        "STATION_NAME_KANJI": "白馬",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106290",
+        "STATION_NAME_KANJI": "信濃森上",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106300",
+        "STATION_NAME_KANJI": "白馬大池",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106340",
+        "STATION_NAME_KANJI": "千国",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251106310",
+        "STATION_NAME_KANJI": "南小谷",
+        "LINE_NAME": "大糸線"
+    },
+    {
+        "STATION_ID": "2251111140",
+        "STATION_NAME_KANJI": "長野",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251111150",
+        "STATION_NAME_KANJI": "北長野",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251111160",
+        "STATION_NAME_KANJI": "三才",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251111170",
+        "STATION_NAME_KANJI": "豊野",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116010",
+        "STATION_NAME_KANJI": "信濃浅野",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116020",
+        "STATION_NAME_KANJI": "立ヶ花",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116030",
+        "STATION_NAME_KANJI": "上今井",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116040",
+        "STATION_NAME_KANJI": "替佐",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116050",
+        "STATION_NAME_KANJI": "蓮",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116060",
+        "STATION_NAME_KANJI": "飯山",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116070",
+        "STATION_NAME_KANJI": "北飯山",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116080",
+        "STATION_NAME_KANJI": "信濃平",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116090",
+        "STATION_NAME_KANJI": "戸狩野沢温泉",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116100",
+        "STATION_NAME_KANJI": "上境",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116110",
+        "STATION_NAME_KANJI": "上桑名川",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116120",
+        "STATION_NAME_KANJI": "桑名川",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116130",
+        "STATION_NAME_KANJI": "西大滝",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116140",
+        "STATION_NAME_KANJI": "信濃白鳥",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116150",
+        "STATION_NAME_KANJI": "平滝",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116160",
+        "STATION_NAME_KANJI": "横倉",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116170",
+        "STATION_NAME_KANJI": "森宮野原",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116180",
+        "STATION_NAME_KANJI": "足滝",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116190",
+        "STATION_NAME_KANJI": "越後田中",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116200",
+        "STATION_NAME_KANJI": "津南",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116210",
+        "STATION_NAME_KANJI": "越後鹿渡",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116220",
+        "STATION_NAME_KANJI": "越後田沢",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116230",
+        "STATION_NAME_KANJI": "越後水沢",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116240",
+        "STATION_NAME_KANJI": "土市",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116250",
+        "STATION_NAME_KANJI": "十日町",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116260",
+        "STATION_NAME_KANJI": "魚沼中条",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116270",
+        "STATION_NAME_KANJI": "下条",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116280",
+        "STATION_NAME_KANJI": "越後岩沢",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251116290",
+        "STATION_NAME_KANJI": "内ヶ巻",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2230012190",
+        "STATION_NAME_KANJI": "越後川口",
+        "LINE_NAME": "北しなの線・飯山線"
+    },
+    {
+        "STATION_ID": "2251105210",
+        "STATION_NAME_KANJI": "塩尻",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115010",
+        "STATION_NAME_KANJI": "広丘",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115020",
+        "STATION_NAME_KANJI": "村井",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115025",
+        "STATION_NAME_KANJI": "平田",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115030",
+        "STATION_NAME_KANJI": "南松本",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115040",
+        "STATION_NAME_KANJI": "松本",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115050",
+        "STATION_NAME_KANJI": "田沢",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115060",
+        "STATION_NAME_KANJI": "明科",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115070",
+        "STATION_NAME_KANJI": "西条",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115080",
+        "STATION_NAME_KANJI": "坂北",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115090",
+        "STATION_NAME_KANJI": "聖高原",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115100",
+        "STATION_NAME_KANJI": "冠着",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115110",
+        "STATION_NAME_KANJI": "姨捨",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251115120",
+        "STATION_NAME_KANJI": "稲荷山",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251111120",
+        "STATION_NAME_KANJI": "篠ノ井",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251111220",
+        "STATION_NAME_KANJI": "今井",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251111130",
+        "STATION_NAME_KANJI": "川中島",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251111210",
+        "STATION_NAME_KANJI": "安茂里",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2251111140",
+        "STATION_NAME_KANJI": "長野",
+        "LINE_NAME": "篠ノ井線・信越本線"
+    },
+    {
+        "STATION_ID": "2241805500",
+        "STATION_NAME_KANJI": "甲府",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2241805520",
+        "STATION_NAME_KANJI": "竜王",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2241805530",
+        "STATION_NAME_KANJI": "塩崎",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2241805540",
+        "STATION_NAME_KANJI": "韮崎",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2241805550",
+        "STATION_NAME_KANJI": "新府",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2241805560",
+        "STATION_NAME_KANJI": "穴山",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2241805570",
+        "STATION_NAME_KANJI": "日野春",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2241805580",
+        "STATION_NAME_KANJI": "長坂",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2241805590",
+        "STATION_NAME_KANJI": "小淵沢",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251105090",
+        "STATION_NAME_KANJI": "信濃境",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251105100",
+        "STATION_NAME_KANJI": "富士見",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251105450",
+        "STATION_NAME_KANJI": "すずらんの里",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251105110",
+        "STATION_NAME_KANJI": "青柳",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251105120",
+        "STATION_NAME_KANJI": "茅野",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251105130",
+        "STATION_NAME_KANJI": "上諏訪",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251105140",
+        "STATION_NAME_KANJI": "下諏訪",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251105150",
+        "STATION_NAME_KANJI": "岡谷",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251105440",
+        "STATION_NAME_KANJI": "みどり湖",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251105210",
+        "STATION_NAME_KANJI": "塩尻",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251115010",
+        "STATION_NAME_KANJI": "広丘",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251115020",
+        "STATION_NAME_KANJI": "村井",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251115025",
+        "STATION_NAME_KANJI": "平田",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251115030",
+        "STATION_NAME_KANJI": "南松本",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251115040",
+        "STATION_NAME_KANJI": "松本",
+        "LINE_NAME": "中央本線・篠ノ井線"
+    },
+    {
+        "STATION_ID": "2251105150",
+        "STATION_NAME_KANJI": "岡谷",
+        "LINE_NAME": "中央本線（辰野経由）"
+    },
+    {
+        "STATION_ID": "2251105160",
+        "STATION_NAME_KANJI": "川岸",
+        "LINE_NAME": "中央本線（辰野経由）"
+    },
+    {
+        "STATION_ID": "2251105170",
+        "STATION_NAME_KANJI": "辰野",
+        "LINE_NAME": "中央本線（辰野経由）"
+    },
+    {
+        "STATION_ID": "2251105180",
+        "STATION_NAME_KANJI": "信濃川島",
+        "LINE_NAME": "中央本線（辰野経由）"
+    },
+    {
+        "STATION_ID": "2251105190",
+        "STATION_NAME_KANJI": "小野",
+        "LINE_NAME": "中央本線（辰野経由）"
+    },
+    {
+        "STATION_ID": "2251105210",
+        "STATION_NAME_KANJI": "塩尻",
+        "LINE_NAME": "中央本線（辰野経由）"
+    },
+    {
+        "STATION_ID": "2968711010",
+        "STATION_NAME_KANJI": "軽井沢",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711020",
+        "STATION_NAME_KANJI": "中軽井沢",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711030",
+        "STATION_NAME_KANJI": "信濃追分",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711040",
+        "STATION_NAME_KANJI": "御代田",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711050",
+        "STATION_NAME_KANJI": "平原",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2251111030",
+        "STATION_NAME_KANJI": "小諸",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711070",
+        "STATION_NAME_KANJI": "滋野",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711080",
+        "STATION_NAME_KANJI": "田中",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711090",
+        "STATION_NAME_KANJI": "大屋",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711170",
+        "STATION_NAME_KANJI": "信濃国分寺",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711100",
+        "STATION_NAME_KANJI": "上田",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711110",
+        "STATION_NAME_KANJI": "西上田",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711120",
+        "STATION_NAME_KANJI": "テクノさかき",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711130",
+        "STATION_NAME_KANJI": "坂城",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711140",
+        "STATION_NAME_KANJI": "戸倉",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711145",
+        "STATION_NAME_KANJI": "千曲",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711150",
+        "STATION_NAME_KANJI": "屋代",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2968711160",
+        "STATION_NAME_KANJI": "屋代高校前",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2251111120",
+        "STATION_NAME_KANJI": "篠ノ井",
+        "LINE_NAME": "しなの鉄道線"
+    },
+    {
+        "STATION_ID": "2251111140",
+        "STATION_NAME_KANJI": "長野",
+        "LINE_NAME": "北しなの線（長野-妙高高原）"
+    },
+    {
+        "STATION_ID": "2251111150",
+        "STATION_NAME_KANJI": "北長野",
+        "LINE_NAME": "北しなの線（長野-妙高高原）"
+    },
+    {
+        "STATION_ID": "2251111160",
+        "STATION_NAME_KANJI": "三才",
+        "LINE_NAME": "北しなの線（長野-妙高高原）"
+    },
+    {
+        "STATION_ID": "2251111170",
+        "STATION_NAME_KANJI": "豊野",
+        "LINE_NAME": "北しなの線（長野-妙高高原）"
+    },
+    {
+        "STATION_ID": "2251111180",
+        "STATION_NAME_KANJI": "牟礼",
+        "LINE_NAME": "北しなの線（長野-妙高高原）"
+    },
+    {
+        "STATION_ID": "2251111190",
+        "STATION_NAME_KANJI": "古間",
+        "LINE_NAME": "北しなの線（長野-妙高高原）"
+    },
+    {
+        "STATION_ID": "2251111200",
+        "STATION_NAME_KANJI": "黒姫",
+        "LINE_NAME": "北しなの線（長野-妙高高原）"
+    },
+    {
+        "STATION_ID": "2230011010",
+        "STATION_NAME_KANJI": "妙高高原",
+        "LINE_NAME": "北しなの線（長野-妙高高原）"
+    }
+]
