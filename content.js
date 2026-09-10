@@ -449,6 +449,33 @@ const JreAreaLine = [
     }
 ];
 
+const ToeiAreaLine = [
+    {
+        'code': '1',
+        'line': 'A 浅草線',
+        'sectionId': 'lineBtnToei',
+        'flowType': 'Toei'
+    },
+    {
+        'code': '2',
+        'line': 'I 三田線',
+        'sectionId': 'lineBtnToei',
+        'flowType': 'Toei'
+    },
+    {
+        'code': '3',
+        'line': 'S 新宿線',
+        'sectionId': 'lineBtnToei',
+        'flowType': 'Toei'
+    },
+    {
+        'code': '4',
+        'line': 'E 大江戸線',
+        'sectionId': 'lineBtnToei',
+        'flowType': 'Toei'
+    }
+];
+
 /// クラス定義
 // 列車情報クラス
 // JRW近畿アーバン
@@ -1352,7 +1379,7 @@ function posMatch_Central(linename, locationRow) {
 function StaGet_Other(pos, line) {
     switch (line) {
         case "aonami": {
-            const position = pos.replace(/[A-Z]/, '') && pos.replace('0', '');
+            const position = pos.replace(/[A-Z]/, '').replace(/0{0,2}/, '').replace(/[A-Z]/, '');
             const staInfo = stations_Central.filter(Aostation => {
                 if (Aostation.kudariJun === position && Aostation.ryokakuSenkuMei === "あおなみ線") return Aostation;
             });
@@ -1523,13 +1550,6 @@ function trainElementCentral(train) {
  * @return {HTMLElement}
  */
 function trainElementAonami(train) {
-    train.position = obj["id"]; // 走行位置
-    train.trainnumber = obj.tr[0]["no"]; // 列車番号
-    train.traintype = obj.tr[0]["sy"]; // 種別？
-    train.tostation = obj.tr[0]["ik"]; // 行先
-    train.delay = obj.tr[0]["dl"]; // 遅れ時分
-    train.locationCol = obj.tr[0]["hk"]; // 上下区分 0=上り, 1=下り
-
     const line = 'aonami';
     const DispTypeAddCol = AddDispTypeMapCol(train.traintype, line);
     const DestAddCol = AddDestMapCol(train.tostation, line);
@@ -1595,6 +1615,39 @@ function trainElementAonami(train) {
 //     }
 // }
 
+/**
+ * TS と EK をマージして新しいオブジェクトを返す（null チェックあり）
+ * @param {Object} data - 元のオブジェクト（UP, TS, EK を含む可能性あり）
+ * @returns {Object} - マージ後の新しいオブジェクト（UP をそのまま、TS に結合）
+ */
+function mergeTSandEKWithNullCheck(data) {
+  // 安全にオブジェクト化（null や非オブジェクトを受け取った場合に備える）
+  const src = (data && typeof data === 'object') ? data : {};
+
+  // UP はそのまま（存在しない場合は空配列）
+  const up = Array.isArray(src.UP) ? deepCopy(src.UP) : [];
+
+  // TS と EK を配列として取得（存在しない・null・非配列なら空配列にする）
+  const tsArray = Array.isArray(src.TS) ? deepCopy(src.TS) : [];
+  const ekArray = Array.isArray(src.EK) ? deepCopy(src.EK) : [];
+
+  // マージ（順序: TS の要素の後に EK の要素）
+  const mergedTS = tsArray.concat(ekArray);
+
+  return {
+    UP: up,
+    TS: mergedTS
+  };
+}
+
+/**
+ * 簡易な深いコピー（オブジェクト/配列のみを想定）
+ * JSON シリアライズで十分なケース向け
+ */
+function deepCopy(value) {
+  return JSON.parse(JSON.stringify(value));
+}
+
 // ボタンクリック時に発火
 async function lineClickEvent(linename, flowType, line) {
     elem.innerHTML = "・・・読み込み中・・・";
@@ -1633,6 +1686,7 @@ async function lineClickEvent(linename, flowType, line) {
         const body = await response.json();
         // const trains = body.trains.map(buildTrain);
         let trains;
+        let aonamiTrains;
 
         switch (flowType) {
             case 'KinkiUrban': trains = body.map(buildTrainWestUrban);
@@ -1654,11 +1708,25 @@ async function lineClickEvent(linename, flowType, line) {
                 );
                 viewTrainsCentral(trainsFilter, flowType);
                 break;
-            case 'Aonami': trains = body.map(buildTrainAonami);
+            case 'Aonami': aonamiTrains = mergeTSandEKWithNullCheck(body)
+                trains = aonamiTrains.TS.map(buildTrainAonami);
                 viewTrainsAonami(trains, flowType);
                 break;
             case 'JreOther': trains = body.map(buildTrainJreOther);
                 viewTrainsJreOther(trains, flowType);
+                break;
+            case 'Toei': trains = body.map(buildTrainToei);
+                var regex = new RegExp('[ ]');
+                var displine = '';
+                if (regex.test(line)) {
+                    displine = line.split(' ')[1];
+                } else {
+                    displine = line;
+                }
+                const trainsFilterto = trains.filter(train =>
+                    train.linename[0].name === displine
+                );
+                viewTrainsToei(trainsFilter, flowType);
                 break;
         }
 
@@ -1677,6 +1745,7 @@ window.addEventListener('load', () => {
     SaninAreaLine.map(k => lineButton(k.code, k.line, k.sectionId, k.flowType));
     CentralAreaLine.map(k => lineButton(k.code, k.line, k.sectionId, k.flowType));
     JreAreaLine.map(k => lineButton(k.code, k.line, k.sectionId, k.flowType));
+    ToeiAreaLine.map(k => lineButton(k.code, k.line, k.sectionId, k.flowType));
 })
 
 /*
